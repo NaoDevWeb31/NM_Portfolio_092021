@@ -1,0 +1,22 @@
+#intro {
+  padding-top: 200px;
+  height: 600px;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../images/mac-code-editor-yellow-mug-plant.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#about {
+  background-color: #335384;
+}
+
+#portfolio {
+  background-color: #335384;
+}
+
+/* autre couleur bleu-vert #1C879F */
