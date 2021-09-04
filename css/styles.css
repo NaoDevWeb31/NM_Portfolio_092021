@@ -1,3 +1,4 @@
+/**************** INTRO SECTION ****************/
 #intro {
   padding-top: 200px;
   height: 600px;
@@ -11,12 +12,37 @@
   background-position: center;
 }
 
+/**************** ABOUT SECTION ****************/
 #about {
   background-color: #335384;
 }
 
+/**************** PORTFOLIO SECTION ****************/
 #portfolio {
   background-color: #335384;
 }
 
-/* autre couleur bleu-vert #1C879F */
+/**************** CONTACT SECTION ****************/
+@media screen and (min-width: 331px) {
+  .col-xs-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .d-xs-inline {
+    display: inline !important;
+  }
+}
+#email-link {
+  color: rgba(0, 0, 0, 0.541);
+}
+#email-link:hover {
+  color: rgba(255, 255, 255, 0.541);
+}
+.footer-icon {
+  color: rgba(255, 255, 255, 0.541);
+  font-size: 30px;
+}
+.footer-icon:hover {
+  color: white;
+}
