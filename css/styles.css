@@ -14,12 +14,24 @@
 
 /**************** ABOUT SECTION ****************/
 #about {
-  background-color: #335384;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    142deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(51, 83, 132, 1) 65%,
+    rgba(28, 135, 159, 1) 100%
+  );
 }
 
 /**************** PORTFOLIO SECTION ****************/
 #portfolio {
-  background-color: #335384;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    142deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(51, 83, 132, 1) 65%,
+    rgba(28, 135, 159, 1) 100%
+  );
 }
 
 /**************** CONTACT SECTION ****************/
