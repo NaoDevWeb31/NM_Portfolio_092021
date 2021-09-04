@@ -1,3 +1,14 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5rem;
+  border-left: 3px solid;
+}
+#collapsibleNavId .nav-link:hover {
+  border-bottom: 2px solid #2db2d3;
+}
 /**************** INTRO SECTION ****************/
 #intro {
   padding-top: 200px;
@@ -11,6 +22,16 @@
   background-size: cover;
   background-position: center;
 }
+#title-card {
+  border-top: 4px solid #2db2d3;
+}
+#card-divider {
+  width: 3rem;
+  border-top: 4px solid #2db2d3;
+  border-radius: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /**************** ABOUT SECTION ****************/
 #about {
@@ -21,6 +42,10 @@
     rgba(51, 83, 132, 1) 65%,
     rgba(28, 135, 159, 1) 100%
   );
+}
+#about-status {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.3rem;
 }
 
 /**************** PORTFOLIO SECTION ****************/
