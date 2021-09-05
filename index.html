@@ -4,7 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Naomi Mango| Développeur Web Junior | Portfolio </title>
+        <title>Naomi Mango | Développeur Web Junior | Portfolio </title>
         <meta name="description" content="Portfolio de Naomi Mango, Développeur Web Junior, diplômée de la Formation Développeur Web d'OpenClassrooms">
         <!-- Open Graph -->
         <meta property="og:title" content="Naomi Mango | Développeur Web Junior"/>
@@ -34,7 +34,7 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body class="container-fluid" data-spy="scroll" data-target="#navbar-header" data-offset="0">
         <header>
@@ -52,19 +52,19 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">À propos <span class="sr-only">À propos</span></a>
+                            <a class="nav-link" href="#about-anchor" data-target="about">À propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">Compétences</a>
+                            <a class="nav-link" href="#training-anchor" data-target="training">Formations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#training">Formation</a>
+                            <a class="nav-link" href="#skills-anchor" data-target="skills">Compétences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link" href="#portfolio-anchor" data-target="portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact-anchor" data-target="contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -72,14 +72,15 @@
         </header>
         <main data-spy="scroll" data-target="#main-navbar">
             <section id="intro" class="row">
-                <div id="contact-title" class="col-md-12 text-center">
-                    <div id="title-card" class="card col-9 col-md-5 mx-auto py-4">
+                <div class="col-md-12 text-center my-5">
+                    <div id="intro-card" class="card col-9 col-md-5 mx-auto py-4">
                         <h1 class="card-title mb-1 display-4">Naomi Mango</h1>
                         <hr id="card-divider">
                         <p class="card-subtitle mt-2 h4">Développeur Web Junior</p>
                     </div>
                 </div>
             </section>
+            <div id="about-anchor" class="scroll-adjust"></div>
             <section id="about" class="row text-light">
                 <div id="about-title" class="col-12 text-center d-flex justify-content-center mt-4 mb-3 mb-lg-0">
                     <h2 class="pl-2">Présentation</h2>
@@ -96,22 +97,133 @@
                     </p>
                 </div>
             </section>
+            <div id="training-anchor" class="scroll-adjust"></div>
+            <section id="training" class="row">
+                <div id="training-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
+                    <h2 class="pl-2">Formations</h2>
+                </div>
+                <!-- TIMELINE -->
+                <div class="container my-3 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="main-timeline">
+                                <!-- TRAINING 2 -->
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <span class="timeline-year">2020</span>
+                                        <div class="timeline-icon">
+                                            <i class="fas fa-laptop-code"></i>
+                                        </div>
+                                        <h3 class="title">Développeur Web</h3><p class="subtitle">
+                                            <i class="fas fa-graduation-cap mr-2"></i>Développeur Web (RNCP Niv. 5)<br/>
+                                            <i class="fas fa-map-marker-alt mr-2"></i><a href="https://openclassrooms.com/fr/" class="text-white">OpenClassrooms</a> — À distance
+                                        </p>
+                                        <p class="description">
+                                            Formation technique complète qui enseigne la création de sites web fluides, dynamiques et responsive à travers des projets professionnalisants et en mettant à disposition des cours gratuits
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-light mt-2 p-1" data-toggle="modal" data-target="#Training2ModalCenter">
+                                            En savoir plus
+                                        </button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Training2ModalCenter" tabindex="-1" role="dialog" aria-labelledby="Training2ModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h4 class="modal-title" id="Training2ModalCenterTitle">Détails de la Formation</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Accompagnée hebdomadairement par un mentor, j'ai appris au cours des 7 mois de formation à :
+                                                    <ul>
+                                                        <li>découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS</li>
+                                                        <li>ajouter du contenu audio et vidéo en HTML5</li>
+                                                        <li>animer les pages web avec CSS3</li>
+                                                        <li>appliquer les standards du web et les normes en vigueur</li>
+                                                        <li>construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette)</li>
+                                                        <li>améliorer le référencement naturel en utilisant les balises selon leur sémantique</li>
+                                                        <li>faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</li>
+                                                        <li>se connecter à un service web pour exploiter des données tierces (API)</li>
+                                                        <li>gérer les comptes utilisateurs</li>
+                                                        <li>concevoir un site maintenable grâce à la gestion des erreurs et exceptions</li>
+                                                        <li>créer, gérer et afficher le contenu d’une base de données</li>
+                                                    </ul>
+                                                </p>
+                                                <img class="img-responsive col-12" src="" alt="">
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- TRAINING 1 -->
+                                <div class="timeline">
+                                    <div class="timeline-content text-white">
+                                        <span class="timeline-year">2013 - 2015</span>
+                                        <div class="timeline-icon">
+                                            <i class="fas fa-microphone"></i>
+                                        </div>
+                                        <h3 class="title">Technicien Son</h3>
+                                        <p class="subtitle">
+                                            <i class="fas fa-graduation-cap mr-2"></i>Audio Engineer Diploma (RNCP Niv. 5)<br/>
+                                            <i class="fas fa-map-marker-alt mr-2"></i><a href="https://www.sae.edu/fra/fr" class="text-white">SAE Institute Paris</a> — Aubervilliers, France
+                                        </p>
+                                        <div class="description">
+                                            Formation technique complète qui couvre tous les aspects de la musique et de l‘audiovisuel tels que le mixage et la MAO en mettant à disposition des équipements et des studios d'enregistrement
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-light mt-2 p-1" data-toggle="modal" data-target="#Training1ModalCenter">
+                                            En savoir plus
+                                        </button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Training1ModalCenter" tabindex="-1" role="dialog" aria-labelledby="Training1ModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h4 class="modal-title" id="Training1ModalCenterTitle">Détails de la Formation</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Au cours des 2 années de formation, j'ai pu :
+                                                    <ul>
+                                                        <li>Acquérir des compétences nécessaires à l’intégration au milieu de l’industrie de l’audiovisuel</li>
+                                                        <li>Apprendre à maîtriser du matériel et les logiciels utilisés en production</li>
+                                                        <li>Apprendre à adopter les bons réflexes et la bonne attitude nécessaires à l’insertion professionnelle dans l’industrie des médias</li>
+                                                        <li>Élargir mes connaissances culturelles des métiers du son et être en mesure de constituer un réseau de relations professionnelles</li>
+                                                    </ul>
+                                                </p>
+                                                <img class="img-responsive col-12" src="images/Naomi-Mango-Audio-Engineering-Diploma.png" alt="Diplôme d'Audio Engineer de Naomi Mango">
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="skills-anchor" class="scroll-adjust"></div>
             <section id="skills" class="row bg-secondary text-white">
                 <div id="skills-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
                     <h2 class="pl-2">Compétences</h2>
                 </div>
             </section>
-            <section id="training" class="row bg-warning">
-                <div id="training-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
-                    <h2 class="pl-2">Formation</h2>
-                </div>
-            </section>
+            <div id="portfolio-anchor" class="scroll-adjust"></div>
             <section id="portfolio" class="row text-white">
                 <div id="portfolio-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
                     <h2 class="pl-2">Projets</h2>
                 </div>
             </section>
         </main>
+        <div id="contact-anchor" class="scroll-adjust"></div>
         <footer id="contact" class="row bg-secondary text-white">
             <div id="contact-title" class="col-md-12 text-center mt-4 mb-4 mb-md-2 d-flex justify-content-center">
                 <h2 class="pl-2">Contact</h2>

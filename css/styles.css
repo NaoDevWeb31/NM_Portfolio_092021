@@ -9,10 +9,14 @@ h2 {
 #collapsibleNavId .nav-link:hover {
   border-bottom: 2px solid #2db2d3;
 }
+.scroll-adjust {
+  padding-top: 5.8rem;
+  margin-top: -5.8rem;
+}
 /**************** INTRO SECTION ****************/
 #intro {
   padding-top: 200px;
-  height: 600px;
+  height: 670px;
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.2),
@@ -22,7 +26,7 @@ h2 {
   background-size: cover;
   background-position: center;
 }
-#title-card {
+#intro-card {
   border-top: 4px solid #2db2d3;
 }
 #card-divider {
@@ -47,7 +51,167 @@ h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 1.3rem;
 }
-
+/**************** TRAINING SECTION ****************/
+#training {
+  background: rgb(204, 204, 204);
+  background: linear-gradient(
+    150deg,
+    rgba(230, 231, 232, 1) 0%,
+    rgba(204, 204, 204, 1) 30%,
+    rgba(187, 189, 191, 1) 60%,
+    rgba(230, 231, 232, 1) 94%
+  );
+}
+#training-title {
+  color: #182650;
+}
+.main-timeline {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.main-timeline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-timeline .timeline {
+  width: 50%;
+  margin: 0 0 20px 20px;
+  float: right;
+}
+.main-timeline .timeline-content {
+  color: #fff;
+  background: linear-gradient(to right, #17728d, #088a8f);
+  text-align: center;
+  padding: 20px 20px 20px 100px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  display: block;
+  position: relative;
+}
+.main-timeline .timeline-content:hover {
+  text-decoration: none;
+}
+.main-timeline .timeline-year {
+  color: #1990b4;
+  background-color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 230px;
+  width: 230px;
+  height: 100%;
+  border-radius: 98px 0 0 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: -230px;
+  top: 0;
+}
+.main-timeline .timeline-icon {
+  color: #fff;
+  font-size: 50px;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 30px;
+  top: 50%;
+}
+.main-timeline .title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+}
+.main-timeline .subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+}
+.main-timeline .description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.main-timeline button {
+  color: #182650;
+}
+.main-timeline .timeline:nth-child(even) {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content {
+  padding: 20px 90px 20px 20px;
+  border-radius: 20px 0 0 20px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content:before {
+  right: auto;
+  left: 0;
+  clip-path: polygon(0 0, 100% 100%, 65% 0);
+}
+.main-timeline .timeline:nth-child(even) .timeline-year {
+  left: auto;
+  right: -230px;
+  border-radius: 0 98px 10px 0;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon {
+  right: 30px;
+  left: auto;
+}
+.main-timeline .timeline:nth-child(4n + 2) .timeline-content {
+  background: linear-gradient(to right, #0c59a7, #2983dd);
+}
+.main-timeline .timeline:nth-child(4n + 2) .timeline-year {
+  color: #2279d1;
+}
+@media screen and (max-width: 991px) {
+  .main-timeline .timeline-year {
+    line-height: 170px;
+  }
+  .main-timeline .timeline:nth-child(even) .timeline-content {
+    padding: 20px 100px 20px 20px;
+  }
+  .main-timeline .timeline:nth-child(even) .timeline-icon {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-timeline .timeline {
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+  .main-timeline .timeline .timeline-content,
+  .main-timeline .timeline:nth-child(even) .timeline-content {
+    padding: 20px 15px 20px 60px;
+    border-radius: 0 20px 20px 20px;
+  }
+  .main-timeline .timeline .timeline-year,
+  .main-timeline .timeline:nth-child(even) .timeline-year {
+    font-size: 25px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: none;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    top: -50px;
+    left: 0;
+  }
+  .main-timeline .timeline .timeline-icon,
+  .main-timeline .timeline:nth-child(even) .timeline-icon {
+    font-size: 28px;
+    left: 15px;
+    right: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-timeline .title {
+    font-size: 18px;
+  }
+}
+.modal-content {
+  border-top: 4px solid #2db2d3;
+}
 /**************** PORTFOLIO SECTION ****************/
 #portfolio {
   background: rgb(2, 0, 36);
