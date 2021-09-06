@@ -13,10 +13,6 @@ h3 {
   padding-top: 5.8rem;
   margin-top: -5.8rem;
 }
-main,
-footer {
-  padding-right: 0rem;
-}
 /**************** INTRO SECTION ****************/
 #intro {
   padding-top: 200px;
@@ -246,7 +242,7 @@ footer {
 .modal-bullet::before {
   content: "";
   display: list-item;
-  list-style-image: url("/images/icons/arrow-bullet.png");
+  list-style-image: url("../images/icons/arrow-bullet.png");
   margin-top: 2px;
   margin-left: -0.5rem;
 }
