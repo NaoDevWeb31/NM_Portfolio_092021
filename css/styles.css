@@ -13,6 +13,10 @@ h3 {
   padding-top: 5.8rem;
   margin-top: -5.8rem;
 }
+main,
+footer {
+  padding-right: 0rem;
+}
 /**************** INTRO SECTION ****************/
 #intro {
   padding-top: 200px;
