@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-h2 {
+h3 {
   font-family: "Bebas Neue", cursive;
   font-size: 2.5rem;
   border-left: 3px solid;
@@ -242,9 +242,22 @@ h2 {
 .modal-bullet::before {
   content: "";
   display: list-item;
-  list-style-image: url("/images/arrow-bullet.png");
+  list-style-image: url("/images/icons/arrow-bullet.png");
   margin-top: 2px;
   margin-left: -0.5rem;
+}
+/**************** SKILLS SECTION ****************/
+#skills-title,
+#skills-description {
+  color: #0a4182;
+}
+.progress {
+  height: 2rem;
+}
+.progress-bar {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, rgba(2, 0, 36, 1), #0d5caa);
 }
 /**************** PORTFOLIO SECTION ****************/
 #portfolio {
