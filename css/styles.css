@@ -47,6 +47,26 @@ h2 {
     rgba(28, 135, 159, 1) 100%
   );
 }
+#about-image {
+  margin-top: -4rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #about-image {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+}
+@media (max-width: 767px) {
+  #about-image {
+    margin-top: 0rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #about-text {
+    flex: 0 0 65%;
+    max-width: 65%;
+  }
+}
 #about-status {
   font-family: "Bebas Neue", cursive;
   font-size: 1.3rem;
@@ -211,6 +231,20 @@ h2 {
 }
 .modal-content {
   border-top: 4px solid #2db2d3;
+}
+.modal-list {
+  list-style: none;
+}
+.modal-bullet {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.modal-bullet::before {
+  content: "";
+  display: list-item;
+  list-style-image: url("/images/arrow-bullet.png");
+  margin-top: 2px;
+  margin-left: -0.5rem;
 }
 /**************** PORTFOLIO SECTION ****************/
 #portfolio {

@@ -71,6 +71,7 @@
             </nav>
         </header>
         <main data-spy="scroll" data-target="#main-navbar">
+            <!-- INTRO BLOCK -->
             <section id="intro" class="row">
                 <div class="col-md-12 text-center my-5">
                     <div id="intro-card" class="card col-9 col-md-5 mx-auto py-4">
@@ -80,29 +81,33 @@
                     </div>
                 </div>
             </section>
+            <!-- INTRO - END -->
             <div id="about-anchor" class="scroll-adjust"></div>
+            <!-- ABOUT BLOCK -->
             <section id="about" class="row text-light">
                 <div id="about-title" class="col-12 text-center d-flex justify-content-center mt-4 mb-3 mb-lg-0">
                     <h2 class="pl-2">Présentation</h2>
                 </div>
                 <div id="about-content" class="row align-items-center px-2 px-md-3">
-                    <div class="col-6 col-md-3 mb-3 mx-auto">
+                    <div id="about-image" class="col-6 col-lg-3 mb-3 mx-auto">
                         <img class="img-thumbnail rounded-circle" src="images/section-about-profile-picture.jpg" alt="Photo de profil de Naomi Mango">
                     </div>
-                    <p class="col-md-9 text-center mx-auto">
-                        Après avoir été <strong>diplômée en Audio Engineer</strong> par la SAE Institute Paris et quelques expériences professionnelles dans le monde du son et de l'audiovisuel, j'ai décidé de me reconvertir dans le monde du développement web.<br/>
+                    <p id="about-text" class="col-lg-9 text-center mx-auto">
+                        Après avoir été <strong>diplômée en Audio Engineer</strong> et quelques expériences professionnelles dans le monde du son et de l'audiovisuel, j'ai décidé de me reconvertir dans le monde du développement web.<br/>
                         Je me suis formée auprès d'<strong>OpenClassrooms</strong>, célèbre plateforme de formations en ligne.<br/>
                         <span id="about-status" class="d-block mt-5 mb-3 text-center font-weight-bold"><i class="fas fa-exclamation mr-3"></i>En recherche d'emploi<i class="fas fa-exclamation ml-3"></i></span>
                         Fraîchement <strong>diplômée de la formation "Développeur Web"</strong>, désireuse de mettre en pratique mes nouvelles compétences et enthousiaste à l'idée d'en apprendre davantage, je suis désormais à la recherche d'un poste en tant que <strong>développeur web front-end</strong> en région parisienne.
                     </p>
                 </div>
             </section>
+            <!-- ABOUT - END -->
             <div id="training-anchor" class="scroll-adjust"></div>
+            <!-- TRAINING BLOCK -->
             <section id="training" class="row">
                 <div id="training-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
                     <h2 class="pl-2">Formations</h2>
                 </div>
-                <!-- TIMELINE -->
+                <!-- TRAINING TIMELINE -->
                 <div class="container my-3 mx-auto">
                     <div class="row">
                         <div class="col-md-12">
@@ -129,33 +134,33 @@
                                     <!-- Modal -->
                                     <div class="modal fade" id="Training2ModalCenter" tabindex="-1" role="dialog" aria-labelledby="Training2ModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h4 class="modal-title" id="Training2ModalCenterTitle">Détails de la Formation</h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                                            </button>
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h4 class="modal-title" id="Training2ModalCenterTitle">Détails de la Formation</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        Accompagnée hebdomadairement par un mentor, j'ai appris au cours des 7 mois de formation à :
+                                                        <ul class="modal-list">
+                                                            <li class="modal-bullet">découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS</li>
+                                                            <li class="modal-bullet">ajouter du contenu audio et vidéo en HTML5</li>
+                                                            <li class="modal-bullet">animer les pages web avec CSS3</li>
+                                                            <li class="modal-bullet">appliquer les standards du web et les normes en vigueur</li>
+                                                            <li class="modal-bullet">construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette)</li>
+                                                            <li class="modal-bullet">améliorer le référencement naturel en utilisant les balises selon leur sémantique</li>
+                                                            <li class="modal-bullet">faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</li>
+                                                            <li class="modal-bullet">se connecter à un service web pour exploiter des données tierces (API)</li>
+                                                            <li class="modal-bullet">gérer les comptes utilisateurs</li>
+                                                            <li class="modal-bullet">concevoir un site maintenable grâce à la gestion des erreurs et exceptions</li>
+                                                            <li class="modal-bullet">créer, gérer et afficher le contenu d’une base de données</li>
+                                                        </ul>
+                                                    </p>
+                                                    <img class="img-responsive col-12" src="" alt="">
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
-                                                <p>
-                                                    Accompagnée hebdomadairement par un mentor, j'ai appris au cours des 7 mois de formation à :
-                                                    <ul>
-                                                        <li>découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS</li>
-                                                        <li>ajouter du contenu audio et vidéo en HTML5</li>
-                                                        <li>animer les pages web avec CSS3</li>
-                                                        <li>appliquer les standards du web et les normes en vigueur</li>
-                                                        <li>construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette)</li>
-                                                        <li>améliorer le référencement naturel en utilisant les balises selon leur sémantique</li>
-                                                        <li>faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</li>
-                                                        <li>se connecter à un service web pour exploiter des données tierces (API)</li>
-                                                        <li>gérer les comptes utilisateurs</li>
-                                                        <li>concevoir un site maintenable grâce à la gestion des erreurs et exceptions</li>
-                                                        <li>créer, gérer et afficher le contenu d’une base de données</li>
-                                                    </ul>
-                                                </p>
-                                                <img class="img-responsive col-12" src="" alt="">
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -164,7 +169,7 @@
                                     <div class="timeline-content text-white">
                                         <span class="timeline-year">2013 - 2015</span>
                                         <div class="timeline-icon">
-                                            <i class="fas fa-microphone"></i>
+                                            <i class="fas fa-sliders-h"></i>
                                         </div>
                                         <h3 class="title">Technicien Son</h3>
                                         <p class="subtitle">
@@ -182,26 +187,26 @@
                                     <!-- Modal -->
                                     <div class="modal fade" id="Training1ModalCenter" tabindex="-1" role="dialog" aria-labelledby="Training1ModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h4 class="modal-title" id="Training1ModalCenterTitle">Détails de la Formation</h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                                            </button>
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h4 class="modal-title" id="Training1ModalCenterTitle">Détails de la Formation</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        Au cours des 2 années de formation, j'ai pu :
+                                                        <ul class="modal-list">
+                                                            <li class="modal-bullet">Acquérir des compétences nécessaires à l’intégration au milieu de l’industrie de l’audiovisuel</li>
+                                                            <li class="modal-bullet">Apprendre à maîtriser du matériel et les logiciels utilisés en production</li>
+                                                            <li class="modal-bullet">Apprendre à adopter les bons réflexes et la bonne attitude nécessaires à l’insertion professionnelle dans l’industrie des médias</li>
+                                                            <li class="modal-bullet">Élargir mes connaissances culturelles des métiers du son et être en mesure de constituer un réseau de relations professionnelles</li>
+                                                        </ul>
+                                                    </p>
+                                                    <img class="img-responsive col-12" src="images/Naomi-Mango-Audio-Engineering-Diploma.png" alt="Diplôme d'Audio Engineer de Naomi Mango">
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
-                                                <p>
-                                                    Au cours des 2 années de formation, j'ai pu :
-                                                    <ul>
-                                                        <li>Acquérir des compétences nécessaires à l’intégration au milieu de l’industrie de l’audiovisuel</li>
-                                                        <li>Apprendre à maîtriser du matériel et les logiciels utilisés en production</li>
-                                                        <li>Apprendre à adopter les bons réflexes et la bonne attitude nécessaires à l’insertion professionnelle dans l’industrie des médias</li>
-                                                        <li>Élargir mes connaissances culturelles des métiers du son et être en mesure de constituer un réseau de relations professionnelles</li>
-                                                    </ul>
-                                                </p>
-                                                <img class="img-responsive col-12" src="images/Naomi-Mango-Audio-Engineering-Diploma.png" alt="Diplôme d'Audio Engineer de Naomi Mango">
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -210,12 +215,18 @@
                     </div>
                 </div>
             </section>
+            <!-- TRAINING - END -->
             <div id="skills-anchor" class="scroll-adjust"></div>
+            <!-- SKILLS BLOCK -->
             <section id="skills" class="row bg-secondary text-white">
                 <div id="skills-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
                     <h2 class="pl-2">Compétences</h2>
                 </div>
+                <div>
+                    
+                </div>
             </section>
+            <!-- SKILLS - END -->
             <div id="portfolio-anchor" class="scroll-adjust"></div>
             <section id="portfolio" class="row text-white">
                 <div id="portfolio-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
