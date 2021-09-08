@@ -274,7 +274,42 @@ h3 {
     rgba(28, 135, 159, 1) 100%
   );
 }
-
+figure.card {
+  padding: 0 0;
+}
+.card-frame {
+  position: relative;
+  border-radius: 0.25rem;
+}
+.card-frame:hover .project-description {
+  visibility: visible;
+  opacity: 1;
+}
+.project-description {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: scroll;
+  opacity: 0;
+  transition: opacity 400ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.badge {
+  font-size: 90%;
+}
+.btn-primary {
+  background: #0a4182;
+  border: transparent;
+}
+@media screen and (min-width: 768px) and (max-width: 840px) {
+  .btn-margin {
+    margin-bottom: 0.5rem;
+  }
+}
+figcaption {
+  background: linear-gradient(170deg, rgb(206, 206, 206) 0%, white 100%);
+}
 /**************** CONTACT SECTION ****************/
 @media screen and (min-width: 331px) {
   .col-xs-6 {
