@@ -1,3 +1,123 @@
+/**************** KEYFRAMES ****************/
+@keyframes loader {
+  0% {
+    opacity: 0.8;
+    z-index: 1100;
+  }
+  75% {
+    opacity: 0.8;
+    z-index: 1100;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes configure-xclockwise {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-135deg);
+  }
+  75% {
+    transform: rotate(-225deg);
+  }
+  100% {
+    transform: rotate(-315deg);
+  }
+}
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+@keyframes left-timeline {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes right-timeline {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes top-timeline {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+:root {
+  --bg-primary-blue: rgba(51, 83, 132, 1);
+  --bg-secondary-blue: rgba(28, 135, 159, 1);
+  --bg-dark-blue: rgba(2, 0, 36, 1);
+  --text-navy-blue: #0a4182;
+  --border-blue-top: #2db2d3;
+}
 body {
   font-family: "Montserrat", sans-serif;
   position: relative;
@@ -7,13 +127,130 @@ h3 {
   font-size: 2.5rem;
   border-left: 3px solid;
 }
-#collapsibleNavId .nav-link:hover {
-  border-bottom: 2px solid #2db2d3;
-}
 .scroll-adjust {
   padding-top: 5.8rem;
   margin-top: -5.8rem;
 }
+/**************** LOADER ****************/
+.loader {
+  width: 100%;
+  height: 100%;
+  background: #6c757d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 3s both cubic-bezier(0.19, 1, 0.22, 1);
+}
+.loading-1 {
+  width: 10rem;
+  height: 10rem;
+  padding: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #53aafb;
+  animation: configure-clockwise 2s ease-in-out infinite alternate;
+}
+.loading-2 {
+  width: 10rem;
+  height: 10rem;
+  padding: 3px;
+  left: -7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(63, 236, 249);
+  transform: rotate(45deg);
+  animation: configure-xclockwise 2s ease-in-out infinite alternate;
+}
+.loading-spinner {
+  width: 100%;
+  height: 100%;
+  background-color: #1d2630;
+}
+/**************** NAVIGATION ****************/
+.nav-link {
+  display: block;
+  padding: 1.7rem 0rem;
+  transform: scale(0.9);
+}
+.nav-item:hover > .nav-link:hover {
+  color: white;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+}
+
+.nav-item:nth-child(5n + 1):hover,
+.nav-item:nth-child(5n + 1) > .nav-link.active {
+  background: linear-gradient(300deg, rgba(255, 255, 255, 0.062), black),
+    no-repeat center/130% url("../images/about-navigation.jpg");
+  color: white;
+  font-weight: bold;
+}
+.nav-item:nth-child(5n + 2):hover,
+.nav-item:nth-child(5n + 2) > .nav-link.active {
+  background: linear-gradient(300deg, rgba(255, 255, 255, 0.062), black),
+    no-repeat center/110% url("../images/training-navigation.jpg");
+  color: white;
+  font-weight: bold;
+}
+.nav-item:nth-child(5n + 3):hover,
+.nav-item:nth-child(5n + 3) > .nav-link.active {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.062),
+      rgba(44, 44, 44, 0.2)
+    ),
+    no-repeat center/100% url("../images/skills-navigation.jpg");
+  color: white;
+  font-weight: bold;
+}
+.nav-item:nth-child(5n + 4):hover,
+.nav-item:nth-child(5n + 4) > .nav-link.active {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.062),
+      rgba(44, 44, 44, 0.2)
+    ),
+    no-repeat center/140% url("../images/portfolio-navigation.jpg");
+  color: white;
+  font-weight: bold;
+}
+.nav-item:nth-child(5n + 5):hover,
+.nav-item:nth-child(5n + 5) > .nav-link.active {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.062),
+      rgba(44, 44, 44, 0.2)
+    ),
+    no-repeat 90% 50%/150% url("../images/contact-navigation.jpg");
+  color: white;
+  font-weight: bold;
+}
+@media screen and (max-width: 991px) {
+  .nav-link {
+    display: block;
+    padding: 1rem 0rem;
+  }
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  .nav-item:nth-child(5n + 1):hover,
+  .nav-item:nth-child(5n + 1) > .nav-link.active,
+  .nav-item:nth-child(5n + 2):hover,
+  .nav-item:nth-child(5n + 2) > .nav-link.active,
+  .nav-item:nth-child(5n + 4):hover,
+  .nav-item:nth-child(5n + 4) > .nav-link.active,
+  .nav-item:nth-child(5n + 5):hover,
+  .nav-item:nth-child(5n + 5) > .nav-link.active {
+    background-size: 100%;
+  }
+}
+
 /**************** INTRO SECTION ****************/
 #intro {
   padding-top: 200px;
@@ -28,14 +265,22 @@ h3 {
   background-position: center;
 }
 #intro-card {
-  border-top: 4px solid #2db2d3;
+  border-top: 4px solid var(--border-blue-top);
 }
 #card-divider {
   width: 3rem;
-  border-top: 4px solid #2db2d3;
+  border-top: 4px solid var(--border-blue-top);
   border-radius: 5rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 340px) {
+  #intro-title {
+    font-size: calc(2.5rem + 1vw);
+  }
+  #intro-subtitle {
+    font-size: calc(1.1rem + 1vw);
+  }
 }
 
 /**************** ABOUT SECTION ****************/
@@ -43,9 +288,9 @@ h3 {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     142deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(51, 83, 132, 1) 65%,
-    rgba(28, 135, 159, 1) 100%
+    var(--bg-dark-blue) 0%,
+    var(--bg-primary-blue) 65%,
+    var(--bg-secondary-blue) 100%
   );
 }
 #about-image {
@@ -71,6 +316,7 @@ h3 {
 #about-status {
   font-family: "Bebas Neue", cursive;
   font-size: 1.3rem;
+  animation: wiggle 2s linear infinite;
 }
 /**************** TRAINING SECTION ****************/
 #training {
@@ -161,6 +407,10 @@ h3 {
 .main-timeline .timeline:nth-child(even) {
   float: left;
   margin: 0 20px 20px 0;
+  animation: left-timeline 900ms ease-out backwards;
+}
+.main-timeline .timeline:nth-child(2n + 1) {
+  animation: right-timeline 900ms ease-out backwards;
 }
 .main-timeline .timeline:nth-child(even) .timeline-content {
   padding: 20px 90px 20px 20px;
@@ -180,10 +430,10 @@ h3 {
   right: 30px;
   left: auto;
 }
-.main-timeline .timeline:nth-child(4n + 2) .timeline-content {
+.main-timeline .timeline:nth-child(2n + 1) .timeline-content {
   background: linear-gradient(to right, #0c59a7, #2983dd);
 }
-.main-timeline .timeline:nth-child(4n + 2) .timeline-year {
+.main-timeline .timeline:nth-child(2n + 1) .timeline-year {
   color: #2279d1;
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -192,17 +442,6 @@ h3 {
   }
 }
 @media screen and (max-width: 991px) {
-  .main-timeline .timeline-year {
-    line-height: 380px;
-  }
-  .main-timeline .timeline:nth-child(even) .timeline-content {
-    padding: 20px 100px 20px 20px;
-  }
-  .main-timeline .timeline:nth-child(even) .timeline-icon {
-    right: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
   .main-timeline .timeline {
     width: 100%;
     padding: 50px 0 0 0;
@@ -229,14 +468,29 @@ h3 {
     left: 15px;
     right: auto;
   }
+  .main-timeline .timeline:nth-child(even) {
+    animation: top-timeline 900ms ease-out backwards;
+  }
+  .main-timeline .timeline:nth-child(2n + 1) {
+    animation: top-timeline 900ms ease-out backwards;
+  }
 }
 @media screen and (max-width: 576px) {
   .main-timeline .title {
     font-size: 18px;
   }
 }
-.modal-content {
-  border-top: 4px solid #2db2d3;
+@media screen and (max-width: 575px) {
+  #Training2ModalCenter,
+  #Training1ModalCenter {
+    padding: 1.5rem;
+  }
+}
+#modal-container2 {
+  border-top: 7px solid var(--border-blue-top);
+}
+#modal-container1 {
+  border-top: 7px solid #2d75d3;
 }
 .modal-list {
   list-style: none;
@@ -255,7 +509,7 @@ h3 {
 /**************** SKILLS SECTION ****************/
 #skills-title,
 #skills-description {
-  color: #0a4182;
+  color: var(--text-navy-blue);
 }
 .progress {
   height: 2rem;
@@ -263,16 +517,19 @@ h3 {
 .progress-bar {
   font-size: 1.2rem;
   font-weight: bold;
-  background: linear-gradient(to right, rgba(2, 0, 36, 1), #0d5caa);
+  background: linear-gradient(to right, var(--bg-dark-blue), #0d5caa);
+}
+#skill-pdf:hover {
+  animation: wiggle 2s linear infinite;
 }
 /**************** PORTFOLIO SECTION ****************/
 #portfolio {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     142deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(51, 83, 132, 1) 65%,
-    rgba(28, 135, 159, 1) 100%
+    var(--bg-dark-blue) 0%,
+    var(--bg-primary-blue) 65%,
+    var(--bg-secondary-blue) 100%
   );
 }
 figure.card {
@@ -285,6 +542,7 @@ figure.card {
 .card-frame:hover .project-description {
   visibility: visible;
   opacity: 1;
+  transform: scaleX(1);
 }
 .project-description {
   visibility: hidden;
@@ -294,13 +552,15 @@ figure.card {
   background-color: rgba(0, 0, 0, 0.85);
   overflow: scroll;
   opacity: 0;
-  transition: opacity 400ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: opacity 400ms cubic-bezier(0.22, 0.61, 0.36, 1), transform 200ms;
+  transform: scaleY(0);
+  transform-origin: top;
 }
 .badge {
   font-size: 90%;
 }
 .btn-primary {
-  background: #0a4182;
+  background: var(--text-navy-blue);
   border: transparent;
 }
 @media screen and (min-width: 768px) and (max-width: 840px) {
@@ -334,4 +594,7 @@ figcaption {
 }
 .footer-icon:hover {
   color: white;
+}
+.social-icon:hover {
+  animation: wiggle 2s linear infinite;
 }
