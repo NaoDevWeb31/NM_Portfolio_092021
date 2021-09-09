@@ -36,175 +36,183 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     </head>
-    <body class="container-fluid" data-spy="scroll" data-target="#navbar-header" data-offset="0">
-        <header>
-            <nav id="navbar-header" class="row navbar navbar-expand-lg navbar-light fixed-top bg-white">
-                <div class="navbar-brand ml-3">
-                    <a href="#">
-                        <img src="images/logos/logo-web-transparent.png" width="60" alt="Logo du site de Naomi Mango, portfolio numérique">
-                        <span class="text d-none">Naomi Mango</span>
-                    </a>
-                </div>
-                <button class="navbar-toggler d-lg-none mr-3" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse pl-2" id="collapsibleNavId">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-anchor" data-target="about">À propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#training-anchor" data-target="training">Formations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills-anchor" data-target="skills">Compétences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio-anchor" data-target="portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact-anchor" data-target="contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <body data-spy="scroll" data-target="#navbar-header" data-offset="0">
+        <header class="container-fluid">
+            <div class="row">
+                <nav id="navbar-header" class="col navbar navbar-expand-lg navbar-light fixed-top bg-white">
+                    <div class="navbar-brand">
+                        <a href="#">
+                            <img src="images/logos/logo-web-transparent.png" width="60" alt="Logo du site de Naomi Mango, portfolio numérique">
+                            <span class="text d-none">Naomi Mango</span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler d-lg-none mr-3" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-anchor">À propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#training-anchor">Formations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills-anchor">Compétences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio-anchor">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-anchor">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
-        <main data-spy="scroll" data-target="#main-navbar">
+        <main>
             <!-- INTRO BLOCK -->
-            <section id="intro" class="row">
-                <div class="col-md-12 text-center my-5">
-                    <div id="intro-card" class="card col-9 col-md-5 mx-auto py-4">
-                        <h1 class="card-title mb-1 display-4">Naomi Mango</h1>
-                        <hr id="card-divider">
-                        <h2 class="card-subtitle mt-2 h4">Développeuse Web Junior</h2>
+            <section id="intro" class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center my-5">
+                        <div id="intro-card" class="card col-9 col-md-5 mx-auto py-4">
+                            <h1 class="card-title mb-1 display-4">Naomi Mango</h1>
+                            <hr id="card-divider">
+                            <h2 class="card-subtitle mt-2 h4">Développeuse Web Junior</h2>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- INTRO - END -->
             <div id="about-anchor" class="scroll-adjust"></div>
             <!-- ABOUT BLOCK -->
-            <section id="about" class="row text-light">
-                <div id="about-title" class="col-12 text-center d-flex justify-content-center mt-4 mb-3 mb-lg-0">
-                    <h3 class="pl-2">Présentation</h3>
-                </div>
-                <div id="about-content" class="row align-items-center px-2 px-md-3">
-                    <div id="about-image" class="col-6 col-lg-3 mb-3 mx-auto">
-                        <img class="img-thumbnail rounded-circle" src="images/section-about-profile-picture.jpg" alt="Photo de profil de Naomi Mango">
+            <section id="about" class="container-fluid">
+                <div class="row text-light">
+                    <div id="about-title" class="col-12 text-center d-flex justify-content-center mt-4 mb-3 mb-lg-0">
+                        <h3 class="pl-2">Présentation</h3>
                     </div>
-                    <p id="about-text" class="col-lg-9 text-center mx-auto">
-                        Après avoir été <strong>diplômée en Audio Engineer</strong> et quelques expériences professionnelles dans le monde du son et de l'audiovisuel, j'ai décidé de me reconvertir dans le monde du développement web.<br/>
-                        Je me suis formée auprès d'<strong>OpenClassrooms</strong>, célèbre plateforme de formations en ligne.<br/>
-                        <span id="about-status" class="d-block mt-5 mb-3 text-center font-weight-bold"><i class="fas fa-exclamation mr-3"></i>En recherche d'emploi<i class="fas fa-exclamation ml-3"></i></span>
-                        Fraîchement <strong>diplômée de la formation "Développeur Web"</strong>, désireuse de mettre en pratique mes nouvelles compétences et enthousiaste à l'idée d'en apprendre davantage, je suis désormais à la recherche d'un poste en tant que <strong>développeur web front-end</strong> en région parisienne.
-                    </p>
+                    <div id="about-content" class="row align-items-center mx-0">
+                        <div id="about-image" class="col-6 col-lg-3 mb-3 mx-auto">
+                            <img class="img-thumbnail rounded-circle" src="images/section-about-profile-picture.jpg" alt="Photo de profil de Naomi Mango">
+                        </div>
+                        <p id="about-text" class="col-lg-9 text-center mx-auto">
+                            Après avoir été <strong>diplômée en Audio Engineer</strong> et quelques expériences professionnelles dans le monde du son et de l'audiovisuel, j'ai décidé de me reconvertir dans le monde du développement web.<br/>
+                            Je me suis formée auprès d'<strong>OpenClassrooms</strong>, célèbre plateforme de formations en ligne.<br/>
+                            <span id="about-status" class="d-block mt-5 mb-3 text-center font-weight-bold"><i class="fas fa-exclamation mr-3"></i>En recherche d'emploi<i class="fas fa-exclamation ml-3"></i></span>
+                            Fraîchement <strong>diplômée de la formation "Développeur Web"</strong>, désireuse de mettre en pratique mes nouvelles compétences et enthousiaste à l'idée d'en apprendre davantage, je suis désormais à la recherche d'un poste en tant que <strong>développeur web front-end</strong> en région parisienne.
+                        </p>
+                    </div>
                 </div>
             </section>
             <!-- ABOUT - END -->
             <div id="training-anchor" class="scroll-adjust"></div>
             <!-- TRAINING BLOCK -->
-            <section id="training" class="row">
-                <div id="training-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
-                    <h3 class="pl-2">Formations</h3>
-                </div>
-                <!-- TRAINING TIMELINE -->
-                <div class="container my-3 mx-auto">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-timeline">
-                                <!-- TRAINING 2 -->
-                                <div class="timeline">
-                                    <div class="timeline-content">
-                                        <span class="timeline-year">2021</span>
-                                        <div class="timeline-icon">
-                                            <i class="fas fa-laptop-code"></i>
+            <section id="training" class="container-fluid">
+                <div class="row">
+                    <div id="training-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
+                        <h3 class="pl-2">Formations</h3>
+                    </div>
+                    <!-- TRAINING TIMELINE -->
+                    <div class="container my-3 mx-auto">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-timeline">
+                                    <!-- TRAINING 2 -->
+                                    <div class="timeline">
+                                        <div class="timeline-content">
+                                            <span class="timeline-year">2021</span>
+                                            <div class="timeline-icon">
+                                                <i class="fas fa-laptop-code"></i>
+                                            </div>
+                                            <h4 class="title">Développeur Web</h4><p class="subtitle">
+                                                <i class="fas fa-graduation-cap mr-2"></i>Développeur Web (RNCP Niv. 5)<br/>
+                                                <i class="fas fa-map-marker-alt mr-2"></i><a href="https://openclassrooms.com/fr/" class="text-white">OpenClassrooms</a> — À distance
+                                            </p>
+                                            <p class="description">
+                                                Formation technique complète qui enseigne la création de sites web fluides, dynamiques et responsive à travers des projets professionnalisants et en mettant à disposition des cours gratuits
+                                            </p>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light mt-2 p-1" data-toggle="modal" data-target="#Training2ModalCenter">
+                                                En savoir plus
+                                            </button>
                                         </div>
-                                        <h4 class="title">Développeur Web</h4><p class="subtitle">
-                                            <i class="fas fa-graduation-cap mr-2"></i>Développeur Web (RNCP Niv. 5)<br/>
-                                            <i class="fas fa-map-marker-alt mr-2"></i><a href="https://openclassrooms.com/fr/" class="text-white">OpenClassrooms</a> — À distance
-                                        </p>
-                                        <p class="description">
-                                            Formation technique complète qui enseigne la création de sites web fluides, dynamiques et responsive à travers des projets professionnalisants et en mettant à disposition des cours gratuits
-                                        </p>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-light mt-2 p-1" data-toggle="modal" data-target="#Training2ModalCenter">
-                                            En savoir plus
-                                        </button>
-                                    </div>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="Training2ModalCenter" tabindex="-1" role="dialog" aria-labelledby="Training2ModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <h4 class="modal-title" id="Training2ModalCenterTitle">Détails de la Formation</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>
-                                                        Accompagnée hebdomadairement par un mentor, j'ai appris au cours des 7 mois de formation à :
-                                                        <ul class="modal-list">
-                                                            <li class="modal-bullet">Découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS</li>
-                                                            <li class="modal-bullet">Ajouter du contenu audio et vidéo en HTML5</li>
-                                                            <li class="modal-bullet">Animer les pages web avec CSS3</li>
-                                                            <li class="modal-bullet">Appliquer les standards du web et les normes en vigueur</li>
-                                                            <li class="modal-bullet">Construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette)</li>
-                                                            <li class="modal-bullet">Améliorer le référencement naturel en utilisant les balises selon leur sémantique</li>
-                                                            <li class="modal-bullet">Faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</li>
-                                                            <li class="modal-bullet">Se connecter à un service web pour exploiter des données tierces (API)</li>
-                                                            <li class="modal-bullet">Gérer les comptes utilisateurs</li>
-                                                            <li class="modal-bullet">Concevoir un site maintenable grâce à la gestion des erreurs et exceptions</li>
-                                                            <li class="modal-bullet">Créer, gérer et afficher le contenu d’une base de données</li>
-                                                        </ul>
-                                                    </p>
-                                                    <img class="img-responsive col-12" src="" alt="">
+                                        <!-- Modal -->
+                                        <div class="modal fade container-fluid" id="Training2ModalCenter" tabindex="-1" role="dialog" aria-labelledby="Training2ModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h4 class="modal-title" id="Training2ModalCenterTitle">Détails de la Formation</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                                    </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+                                                            Accompagnée hebdomadairement par un mentor, j'ai appris au cours des 7 mois de formation à :
+                                                            <ul class="modal-list">
+                                                                <li class="modal-bullet">Découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS</li>
+                                                                <li class="modal-bullet">Ajouter du contenu audio et vidéo en HTML5</li>
+                                                                <li class="modal-bullet">Animer les pages web avec CSS3</li>
+                                                                <li class="modal-bullet">Appliquer les standards du web et les normes en vigueur</li>
+                                                                <li class="modal-bullet">Construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette)</li>
+                                                                <li class="modal-bullet">Améliorer le référencement naturel en utilisant les balises selon leur sémantique</li>
+                                                                <li class="modal-bullet">Faire réagir la page web en fonction des actions de l’utilisateur en JavaScript</li>
+                                                                <li class="modal-bullet">Se connecter à un service web pour exploiter des données tierces (API)</li>
+                                                                <li class="modal-bullet">Gérer les comptes utilisateurs</li>
+                                                                <li class="modal-bullet">Concevoir un site maintenable grâce à la gestion des erreurs et exceptions</li>
+                                                                <li class="modal-bullet">Créer, gérer et afficher le contenu d’une base de données</li>
+                                                            </ul>
+                                                        </p>
+                                                        <img class="img-responsive col-12" src="" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- TRAINING 1 -->
-                                <div class="timeline">
-                                    <div class="timeline-content text-white">
-                                        <span class="timeline-year">2013 - 2015</span>
-                                        <div class="timeline-icon">
-                                            <i class="fas fa-sliders-h"></i>
+                                    <!-- TRAINING 1 -->
+                                    <div class="timeline">
+                                        <div class="timeline-content text-white">
+                                            <span class="timeline-year">2013 - 2015</span>
+                                            <div class="timeline-icon">
+                                                <i class="fas fa-sliders-h"></i>
+                                            </div>
+                                            <h4 class="title">Technicien Son</h4>
+                                            <p class="subtitle">
+                                                <i class="fas fa-graduation-cap mr-2"></i>Audio Engineer Diploma (RNCP Niv. 5)<br/>
+                                                <i class="fas fa-map-marker-alt mr-2"></i><a href="https://www.sae.edu/fra/fr" class="text-white">SAE Institute Paris</a> — Aubervilliers, France
+                                            </p>
+                                            <div class="description">
+                                                Formation technique complète qui couvre tous les aspects de la musique et de l‘audiovisuel tels que le mixage et la MAO en mettant à disposition des équipements et des studios d'enregistrement
+                                            </div>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-light mt-2 p-1" data-toggle="modal" data-target="#Training1ModalCenter">
+                                                En savoir plus
+                                            </button>
                                         </div>
-                                        <h4 class="title">Technicien Son</h4>
-                                        <p class="subtitle">
-                                            <i class="fas fa-graduation-cap mr-2"></i>Audio Engineer Diploma (RNCP Niv. 5)<br/>
-                                            <i class="fas fa-map-marker-alt mr-2"></i><a href="https://www.sae.edu/fra/fr" class="text-white">SAE Institute Paris</a> — Aubervilliers, France
-                                        </p>
-                                        <div class="description">
-                                            Formation technique complète qui couvre tous les aspects de la musique et de l‘audiovisuel tels que le mixage et la MAO en mettant à disposition des équipements et des studios d'enregistrement
-                                        </div>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-light mt-2 p-1" data-toggle="modal" data-target="#Training1ModalCenter">
-                                            En savoir plus
-                                        </button>
-                                    </div>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="Training1ModalCenter" tabindex="-1" role="dialog" aria-labelledby="Training1ModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <h4 class="modal-title" id="Training1ModalCenterTitle">Détails de la Formation</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                                                </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>
-                                                        Au cours des 2 années de formation, j'ai pu :
-                                                        <ul class="modal-list">
-                                                            <li class="modal-bullet">Acquérir des compétences nécessaires à l’intégration au milieu de l’industrie de l’audiovisuel</li>
-                                                            <li class="modal-bullet">Apprendre à maîtriser du matériel et les logiciels utilisés en production</li>
-                                                            <li class="modal-bullet">Apprendre à adopter les bons réflexes et la bonne attitude nécessaires à l’insertion professionnelle dans l’industrie des médias</li>
-                                                            <li class="modal-bullet">Élargir mes connaissances culturelles des métiers du son et être en mesure de constituer un réseau de relations professionnelles</li>
-                                                        </ul>
-                                                    </p>
-                                                    <img class="img-responsive col-12" src="images/Naomi-Mango-Audio-Engineering-Diploma.png" alt="Diplôme d'Audio Engineer de Naomi Mango">
+                                        <!-- Modal -->
+                                        <div class="modal fade container-fluid" id="Training1ModalCenter" tabindex="-1" role="dialog" aria-labelledby="Training1ModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h4 class="modal-title" id="Training1ModalCenterTitle">Détails de la Formation</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                                    </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+                                                            Au cours des 2 années de formation, j'ai pu :
+                                                            <ul class="modal-list">
+                                                                <li class="modal-bullet">Acquérir des compétences nécessaires à l’intégration au milieu de l’industrie de l’audiovisuel</li>
+                                                                <li class="modal-bullet">Apprendre à maîtriser du matériel et les logiciels utilisés en production</li>
+                                                                <li class="modal-bullet">Apprendre à adopter les bons réflexes et la bonne attitude nécessaires à l’insertion professionnelle dans l’industrie des médias</li>
+                                                                <li class="modal-bullet">Élargir mes connaissances culturelles des métiers du son et être en mesure de constituer un réseau de relations professionnelles</li>
+                                                            </ul>
+                                                        </p>
+                                                        <img class="img-responsive col-12" src="images/Naomi-Mango-Audio-Engineering-Diploma.png" alt="Diplôme d'Audio Engineer de Naomi Mango">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -218,395 +226,402 @@
             <!-- TRAINING - END -->
             <div id="skills-anchor" class="scroll-adjust"></div>
             <!-- SKILLS BLOCK -->
-            <section id="skills" class="row bg-white">
-                <div id="skills-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
-                    <h3 class="pl-2">Compétences</h3>
-                </div>
-                <!-- SKILLS SET -->
-                <div class="container-fluid mx-auto my-3">
-                    <div class="row">
-                        <p id="skills-description" class="col-12 text-center mb-4">Au cours de ma formation de Développeur Web, j'ai pu acquérir un certain nombre de compétences. En voici le récapitulatif :</p>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/html-css-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logos des langages Web HTML et CSS">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center mt-2">HTML/CSS</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80 %</div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/js-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo du langage Web JavaScript">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center">JavaScript</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70 %</div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/sass-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo du préprocesseur Sass">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center">Sass</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70 %</div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/git-github-logos.png" width="200px" class="mr-3 rounded img-fluid" alt="Logos du logiciel de gestion de versions Git et de son service GitHub">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center">Git/GitHub</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70 %</div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/bootstrap-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo de la bibliothèque Bootstrap">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center">Bootstrap</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60 %</div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/node-npm-express-logos.png" width="200px" class="mr-3 rounded img-fluid" alt="Logos de l'environnement NodeJS, de son gestionnaire de paquet npm et de son framework ExpressJS">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center">NodeJS/npm/ExpressJS</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60 %</div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/mongodb-atlas-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo du système de gestion de base de données NoSQL MongoDB en version Cloud">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center">MongoDB Atlas</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40 %</div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/mysql-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo du système de gestion de base de données SQL MySQL">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center">MySQL</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40 %</div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
-                            <img src="images/logos/vue-vuetify-logos.png" width="200px" class="mr-3 rounded img-fluid" alt="Logos du framework front-end VueJS et de sa bibliothèque Vuetify">
-                            <div class="card-body d-flex flex-column col">
-                                <h4 class="card-title text-center">Vue.js/Vuetify</h4>
-                                <div class="progress shadow-sm">
-                                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40 %</div>
-                                </div>
-                            </div>
-                        </section>
+            <section id="skills" class="container-fluid">
+                <div class="row">
+                    <div id="skills-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
+                        <h3 class="pl-2">Compétences</h3>
                     </div>
-                </div>
-                <div class="col text-center">
-                    <p class="mb-1">Cliquez sur l'icône ci-dessous pour télécharger mon CV dans un format PDF</p>
-                    <a href="docs/cv.pdf" title="Téléchargez mon CV en format classique !" download="cv_naomi_mango_dev_web_junior"><img src="images/icons/pdf-icon.png" width="80px" class="mb-3" alt="Icône de téléchargement d'un fichier PDF"></a>
+                    <!-- SKILLS SET -->
+                    <div class="container-fluid mx-auto my-3">
+                        <div class="row">
+                            <p id="skills-description" class="col-12 text-center mb-4">Au cours de ma formation de Développeur Web, j'ai pu acquérir un certain nombre de compétences. En voici le récapitulatif :</p>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/html-css-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logos des langages Web HTML et CSS">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center mt-2">HTML/CSS</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/js-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo du langage Web JavaScript">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center">JavaScript</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/sass-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo du préprocesseur Sass">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center">Sass</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/git-github-logos.png" width="200px" class="mr-3 rounded img-fluid" alt="Logos du logiciel de gestion de versions Git et de son service GitHub">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center">Git/GitHub</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/bootstrap-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo de la bibliothèque Bootstrap">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center">Bootstrap</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/node-npm-express-logos.png" width="200px" class="mr-3 rounded img-fluid" alt="Logos de l'environnement NodeJS, de son gestionnaire de paquet npm et de son framework ExpressJS">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center">NodeJS/npm/ExpressJS</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/mongodb-atlas-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo du système de gestion de base de données NoSQL MongoDB en version Cloud">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center">MongoDB Atlas</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/mysql-logo.png" width="200px" class="mr-3 rounded img-fluid" alt="Logo du système de gestion de base de données SQL MySQL">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center">MySQL</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-12 col-lg-6 d-flex flex-column flex-md-row align-items-center mb-3">
+                                <img src="images/logos/vue-vuetify-logos.png" width="200px" class="mr-3 rounded img-fluid" alt="Logos du framework front-end VueJS et de sa bibliothèque Vuetify">
+                                <div class="card-body d-flex flex-column col">
+                                    <h4 class="card-title text-center">Vue.js/Vuetify</h4>
+                                    <div class="progress shadow-sm">
+                                        <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40 %</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <p class="mb-1">Cliquez sur l'icône ci-dessous pour télécharger mon CV dans un format PDF</p>
+                        <a href="docs/cv.pdf" title="Téléchargez mon CV en format classique !" download="cv_naomi_mango_dev_web_junior"><img src="images/icons/pdf-icon.png" width="80px" class="mb-3" alt="Icône de téléchargement d'un fichier PDF"></a>
+                    </div>
                 </div>
             </section>
             <!-- SKILLS - END -->
             <div id="portfolio-anchor" class="scroll-adjust"></div>
             <!-- PORTFOLIO BLOCK -->
-            <section id="portfolio" class="row text-white">
-                <div id="portfolio-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
-                    <h3 class="pl-2">Projets</h3>
-                </div>
-                <div class="container-fluid mt-3">
-                    <div class="row mx-3">
-                        <!-- PROJET -->
-                        <figure class="col-12 col-md card mr-md-5 mb-4">
-                            <div class="card-frame">
-                                <img class="card-img" src="images/reservia-thumbnail.png" alt="Vignette de Reservia, projet 2 de la formation Développeur Web d'OpenClassrooms">
-                                <div class="card-img-overlay project-description">
-                                    <p class="text-center">
-                                        Projet 2 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
-                                    </p>
-                                    <hr class="bg-white">
-                                    <p>
-                                        Intégration de la maquette responsive de Reservia, un site de planification de vacances
-                                    </p>
-                                    <hr class="bg-white">
-                                    <details>
-                                        <summary>Objectifs</summary>
-                                        <ul class="ml-2">
-                                            <li>Intégrer du contenu conformément à une maquette</li>
-                                            <li>Utiliser un système de gestion de versions pour le suivi du projet et son hébergement</li>
-                                            <li>Mettre en place son environnement Front-End</li>
-                                            <li>Implémenter une interface responsive</li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary>Stack Technique</summary>
-                                        <p class="ml-2">
-                                            <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light">Git</span>
-                                        </p>
-                                    </details>
-                                    <details>
-                                        <summary>Liens</summary>
-                                        <p class="ml-2">
-                                            <a class="btn btn-primary mr-2" href="https://naodevweb31.github.io/NaomiMango_2_26-01-2021/" role="button"><i class="fas fa-globe-americas mr-2"></i>Site Web</a>
-                                            <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_2_26-01-2021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
-                                        </p>
-                                    </details>
-                                </div>
-                                <figcaption class="card-body text-dark">
-                                    <h4>Reservia</h4>
-                                </figcaption>
-                            </div>
-                        </figure>
-                        <!-- PROJET -->
-                        <figure class="col-12 col-md card mb-4">
-                            <div class="card-frame">
-                                <img class="card-img" src="images/ohmyfood-thumbnail.png" alt="Vignette d'Ohmyfood, projet 3 de la formation Développeur Web d'OpenClassrooms">
-                                <div class="card-img-overlay project-description">
-                                    <p class="text-center">
-                                        Projet 3 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
-                                    </p>
-                                    <hr class="bg-white">
-                                    <p>
-                                        Intégration dynamique des maquettes d'Ohmyfood, un site web 100% mobile proposant le menu de 4 grands restaurants parisiens
-                                    </p>
-                                    <hr class="bg-white">
-                                    <details>
-                                        <summary>Objectifs</summary>
-                                        <ul class="ml-2">
-                                            <li>Mettre en œuvre des effets CSS graphiques avancés</li>
-                                            <li>Mettre en place une structure de navigation pour un site web</li>
-                                            <li>Assurer la cohérence graphique d'un site web</li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary>Stack Technique</summary>
-                                        <p class="ml-2">
-                                            <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light mr-1">Sass</span>
-                                            <span class="badge badge-pill badge-light">Git</span>
-                                        </p>
-                                    </details>
-                                    <details>
-                                        <summary>Liens</summary>
-                                        <p class="ml-2">
-                                            <a class="btn btn-primary mr-2" href="https://naodevweb31.github.io/NaomiMango_3_15032021/" role="button"><i class="fas fa-globe-americas mr-2"></i>Site Web</a>
-                                            <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_3_15032021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
-                                        </p>
-                                    </details>
-                                </div>
-                                <figcaption class="card-body text-dark">
-                                    <h4>Ohmyfood</h4>
-                                </figcaption>
-                            </div>
-                        </figure>
+            <section id="portfolio" class="container-fluid">
+                <div class="row text-white">
+                    <div id="portfolio-title" class="col-md-12 text-center d-flex justify-content-center mt-4">
+                        <h3 class="pl-2">Projets</h3>
                     </div>
-                    <div class="row mx-3">
-                        <!-- PROJET -->
-                        <figure class="col-12 col-md card mr-md-5 mb-4">
-                            <div class="card-frame">
-                                <img class="card-img" src="images/la-chouette-agence-thumbnail.png" alt="Vignette de La chouette agence, projet 3 de la formation Développeur Web d'OpenClassrooms">
-                                <div class="card-img-overlay project-description">
-                                    <p class="text-center">
-                                        Projet 4 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
-                                    </p>
-                                    <hr class="bg-white">
-                                    <p>
-                                        Analyse et amélioration du SEO et de l'accessibilité de La chouette agence, site web d'une agence de Web Design en perte de vitesse
-                                    </p>
-                                    <hr class="bg-white">
-                                    <details>
-                                        <summary>Objectifs</summary>
-                                        <ul class="ml-2">
-                                            <li>Optimiser la taille et la vitesse d’un site web</li>
-                                            <li>Écrire un code HTML et CSS maintenable</li>
-                                            <li>Réaliser une recherche des bonnes pratiques en développement web</li>
-                                            <li>Optimiser le référencement d'un site web</li>
-                                            <li>Assurer l'accessibilité d'un site web</li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary>Stack Technique</summary>
-                                        <p class="ml-2">
-                                            <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light">Git</span>
+                    <div class="container-fluid mt-3">
+                        <div class="row mx-3">
+                            <!-- PROJET -->
+                            <figure class="col-12 col-md card mr-md-5 mb-4">
+                                <div class="card-frame">
+                                    <img class="card-img" src="images/reservia-thumbnail.png" alt="Vignette de Reservia, projet 2 de la formation Développeur Web d'OpenClassrooms">
+                                    <div class="card-img-overlay project-description">
+                                        <p class="text-center">
+                                            Projet 2 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
                                         </p>
-                                    </details>
-                                    <details>
-                                        <summary>Liens</summary>
-                                        <p class="ml-2">
-                                            Avant
-                                            <a class="btn btn-primary mr-2 btn-margin" href="https://naodevweb31.github.io/P4_00_starting_website/" role="button"><i class="fas fa-globe-americas mr-2"></i>Site Web</a>
-                                            <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/P4_00_starting_website" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                        <hr class="bg-white">
+                                        <p>
+                                            Intégration de la maquette responsive de Reservia, un site de planification de vacances
                                         </p>
-                                        <p class="ml-2">
-                                            Après
-                                            <a class="btn btn-primary mr-2 btn-margin" href="https://naodevweb31.github.io/P4_02_code_source/" role="button"><i class="fas fa-globe-americas mr-2"></i>Site Web</a>
-                                            <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/P4_02_code_source" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
-                                        </p>
-                                    </details>
+                                        <hr class="bg-white">
+                                        <details>
+                                            <summary>Objectifs</summary>
+                                            <ul class="ml-2">
+                                                <li>Intégrer du contenu conformément à une maquette</li>
+                                                <li>Utiliser un système de gestion de versions pour le suivi du projet et son hébergement</li>
+                                                <li>Mettre en place son environnement Front-End</li>
+                                                <li>Implémenter une interface responsive</li>
+                                            </ul>
+                                        </details>
+                                        <details>
+                                            <summary>Stack Technique</summary>
+                                            <p class="ml-2">
+                                                <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light">Git</span>
+                                            </p>
+                                        </details>
+                                        <details>
+                                            <summary>Liens</summary>
+                                            <p class="ml-2">
+                                                <a class="btn btn-primary mr-2" href="https://naodevweb31.github.io/NaomiMango_2_26-01-2021/" role="button"><i class="fas fa-globe-americas mr-2"></i>Site Web</a>
+                                                <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_2_26-01-2021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                            </p>
+                                        </details>
+                                    </div>
+                                    <figcaption class="card-body text-dark">
+                                        <h4>Reservia</h4>
+                                    </figcaption>
                                 </div>
-                                <figcaption class="card-body text-dark">
-                                    <h4>La chouette agence</h4>
-                                </figcaption>
-                            </div>
-                        </figure>
-                        <!-- PROJET -->
-                        <figure class="col-12 col-md card mb-4">
-                            <div class="card-frame">
-                                <img class="card-img" src="images/orinoco-thumbnail.png" alt="Vignette d'Orinoco, projet 3 de la formation Développeur Web d'OpenClassrooms">
-                                <div class="card-img-overlay project-description">
-                                    <p class="text-center">
-                                        Projet 5 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
-                                    </p>
-                                    <hr class="bg-white">
-                                    <p>
-                                        Développement front-end d'Orinoco, un site e-commerce proposant la vente d'ours en peluche
-                                    </p>
-                                    <hr class="bg-white">
-                                    <details>
-                                        <summary>Objectifs</summary>
-                                        <ul class="ml-2">
-                                            <li>Interagir avec un web service avec JavaScript</li>
-                                            <li>Valider des données issues de sources externes</li>
-                                            <li>Gérer des événements JavaScript</li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary>Stack Technique</summary>
-                                        <p class="ml-2">
-                                            <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light mr-1">Git</span>
-                                            <span class="badge badge-pill badge-light mr-1">Bootstrap 5</span> <span class="badge badge-pill badge-light mr-1">Sass</span> <span class="badge badge-pill badge-light">JavaScript</span>
+                            </figure>
+                            <!-- PROJET -->
+                            <figure class="col-12 col-md card mb-4">
+                                <div class="card-frame">
+                                    <img class="card-img" src="images/ohmyfood-thumbnail.png" alt="Vignette d'Ohmyfood, projet 3 de la formation Développeur Web d'OpenClassrooms">
+                                    <div class="card-img-overlay project-description">
+                                        <p class="text-center">
+                                            Projet 3 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
                                         </p>
-                                    </details>
-                                    <details>
-                                        <summary>Liens</summary>
-                                        <p class="ml-2">
-                                            <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_5_17052021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                        <hr class="bg-white">
+                                        <p>
+                                            Intégration dynamique des maquettes d'Ohmyfood, un site web 100% mobile proposant le menu de 4 grands restaurants parisiens
                                         </p>
-                                    </details>
+                                        <hr class="bg-white">
+                                        <details>
+                                            <summary>Objectifs</summary>
+                                            <ul class="ml-2">
+                                                <li>Mettre en œuvre des effets CSS graphiques avancés</li>
+                                                <li>Mettre en place une structure de navigation pour un site web</li>
+                                                <li>Assurer la cohérence graphique d'un site web</li>
+                                            </ul>
+                                        </details>
+                                        <details>
+                                            <summary>Stack Technique</summary>
+                                            <p class="ml-2">
+                                                <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light mr-1">Sass</span>
+                                                <span class="badge badge-pill badge-light">Git</span>
+                                            </p>
+                                        </details>
+                                        <details>
+                                            <summary>Liens</summary>
+                                            <p class="ml-2">
+                                                <a class="btn btn-primary mr-2" href="https://naodevweb31.github.io/NaomiMango_3_15032021/" role="button"><i class="fas fa-globe-americas mr-2"></i>Site Web</a>
+                                                <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_3_15032021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                            </p>
+                                        </details>
+                                    </div>
+                                    <figcaption class="card-body text-dark">
+                                        <h4>Ohmyfood</h4>
+                                    </figcaption>
                                 </div>
-                                <figcaption class="card-body text-dark">
-                                    <h4>Orinoco</h4>
-                                </figcaption>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="row mx-3">
-                        <!-- PROJET -->
-                        <figure class="col-12 col-md card mr-md-5 mb-4">
-                            <div class="card-frame">
-                                <img class="card-img" src="images/so-pekocko-thumbnail.png" alt="Vignette de So Pekocko, projet 3 de la formation Développeur Web d'OpenClassrooms">
-                                <div class="card-img-overlay project-description">
-                                    <p class="text-center">
-                                        Projet 6 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
-                                    </p>
-                                    <hr class="bg-white">
-                                    <p>
-                                        Développement du back-end et création de l'API sécurisée de Piquante, une application web sur des sauces piquantes
-                                    </p>
-                                    <hr class="bg-white">
-                                    <details>
-                                        <summary>Objectifs</summary>
-                                        <ul class="ml-2">
-                                            <li>Implémenter un modèle logique de données conformément à la réglementation</li>
-                                            <li>Mettre en œuvre des opérations CRUD de manière sécurisée</li>
-                                            <li>Stocker des données de manière sécurisée</li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary>Stack Technique</summary>
-                                        <p class="ml-2">
-                                            <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light mr-1">JavaScript</span>
-                                            <span class="badge badge-pill badge-light mr-1">Git</span> <span class="badge badge-pill badge-light mr-1">NodeJS</span> <span class="badge badge-pill badge-light mr-1">ExpressJS</span>
-                                            <span class="badge badge-pill badge-light mr-1">Mongoose</span> <span class="badge badge-pill badge-light">MongoDB Atlas</span>
+                            </figure>
+                        </div>
+                        <div class="row mx-3">
+                            <!-- PROJET -->
+                            <figure class="col-12 col-md card mr-md-5 mb-4">
+                                <div class="card-frame">
+                                    <img class="card-img" src="images/la-chouette-agence-thumbnail.png" alt="Vignette de La chouette agence, projet 3 de la formation Développeur Web d'OpenClassrooms">
+                                    <div class="card-img-overlay project-description">
+                                        <p class="text-center">
+                                            Projet 4 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
                                         </p>
-                                    </details>
-                                    <details>
-                                        <summary>Liens</summary>
-                                        <p class="ml-2">
-                                            <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_6_22062021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                        <hr class="bg-white">
+                                        <p>
+                                            Analyse et amélioration du SEO et de l'accessibilité de La chouette agence, site web d'une agence de Web Design en perte de vitesse
                                         </p>
-                                    </details>
+                                        <hr class="bg-white">
+                                        <details>
+                                            <summary>Objectifs</summary>
+                                            <ul class="ml-2">
+                                                <li>Optimiser la taille et la vitesse d’un site web</li>
+                                                <li>Écrire un code HTML et CSS maintenable</li>
+                                                <li>Réaliser une recherche des bonnes pratiques en développement web</li>
+                                                <li>Optimiser le référencement d'un site web</li>
+                                                <li>Assurer l'accessibilité d'un site web</li>
+                                            </ul>
+                                        </details>
+                                        <details>
+                                            <summary>Stack Technique</summary>
+                                            <p class="ml-2">
+                                                <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light">Git</span>
+                                            </p>
+                                        </details>
+                                        <details>
+                                            <summary>Liens</summary>
+                                            <p class="ml-2">
+                                                Avant
+                                                <a class="btn btn-primary mr-2 btn-margin" href="https://naodevweb31.github.io/P4_00_starting_website/" role="button"><i class="fas fa-globe-americas mr-2"></i>Site Web</a>
+                                                <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/P4_00_starting_website" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                            </p>
+                                            <p class="ml-2">
+                                                Après
+                                                <a class="btn btn-primary mr-2 btn-margin" href="https://naodevweb31.github.io/P4_02_code_source/" role="button"><i class="fas fa-globe-americas mr-2"></i>Site Web</a>
+                                                <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/P4_02_code_source" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                            </p>
+                                        </details>
+                                    </div>
+                                    <figcaption class="card-body text-dark">
+                                        <h4>La chouette agence</h4>
+                                    </figcaption>
                                 </div>
-                                <figcaption class="card-body text-dark">
-                                    <h4>So Pekocko</h4>
-                                </figcaption>
-                            </div>
-                        </figure>
-                        <!-- PROJET -->
-                        <figure class="col-12 col-md card mb-4">
-                            <div class="card-frame">
-                                <img class="card-img" src="images/groupomania-thumbnail.png" alt="Vignette de Groupomania, projet 3 de la formation Développeur Web d'OpenClassrooms">
-                                <div class="card-img-overlay project-description">
-                                    <p class="text-center">
-                                        Projet 7 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
-                                    </p>
-                                    <hr class="bg-white">
-                                    <p>
-                                        Développement Full-Stack d'un réseau social interne
-                                    </p>
-                                    <hr class="bg-white">
-                                    <details>
-                                        <summary>Objectifs</summary>
-                                        <ul class="ml-2">
-                                            <li>Personnaliser le contenu envoyé à un client web</li>
-                                            <li>Authentifier un utilisateur et maintenir sa session</li>
-                                            <li>Implémenter un stockage de données sécurisé en utilisant SQL</li>
-                                            <li>Gérer un stockage de données à l'aide de SQL</li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary>Stack Technique</summary>
-                                        <p class="ml-2">
-                                            <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light mr-1">JavaScript</span>
-                                            <span class="badge badge-pill badge-light mr-1">Git</span> <span class="badge badge-pill badge-light mr-1">VueJS 2</span> <span class="badge badge-pill badge-light mr-1">Vuetify</span>
-                                            <span class="badge badge-pill badge-light mr-1">NodeJS</span> <span class="badge badge-pill badge-light mr-1">NodeJS</span> <span class="badge badge-pill badge-light mr-1">ExpressJS</span>
-                                            <span class="badge badge-pill badge-light">MySQL</span>
+                            </figure>
+                            <!-- PROJET -->
+                            <figure class="col-12 col-md card mb-4">
+                                <div class="card-frame">
+                                    <img class="card-img" src="images/orinoco-thumbnail.png" alt="Vignette d'Orinoco, projet 3 de la formation Développeur Web d'OpenClassrooms">
+                                    <div class="card-img-overlay project-description">
+                                        <p class="text-center">
+                                            Projet 5 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
                                         </p>
-                                    </details>
-                                    <details>
-                                        <summary>Liens</summary>
-                                        <p class="ml-2">
-                                            <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_2_26-01-2021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                        <hr class="bg-white">
+                                        <p>
+                                            Développement front-end d'Orinoco, un site e-commerce proposant la vente d'ours en peluche
                                         </p>
-                                    </details>
+                                        <hr class="bg-white">
+                                        <details>
+                                            <summary>Objectifs</summary>
+                                            <ul class="ml-2">
+                                                <li>Interagir avec un web service avec JavaScript</li>
+                                                <li>Valider des données issues de sources externes</li>
+                                                <li>Gérer des événements JavaScript</li>
+                                            </ul>
+                                        </details>
+                                        <details>
+                                            <summary>Stack Technique</summary>
+                                            <p class="ml-2">
+                                                <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light mr-1">Git</span>
+                                                <span class="badge badge-pill badge-light mr-1">Bootstrap 5</span> <span class="badge badge-pill badge-light mr-1">Sass</span> <span class="badge badge-pill badge-light">JavaScript</span>
+                                            </p>
+                                        </details>
+                                        <details>
+                                            <summary>Liens</summary>
+                                            <p class="ml-2">
+                                                <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_5_17052021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                            </p>
+                                        </details>
+                                    </div>
+                                    <figcaption class="card-body text-dark">
+                                        <h4>Orinoco</h4>
+                                    </figcaption>
                                 </div>
-                                <figcaption class="card-body text-dark">
-                                    <h4>Groupomania</h4>
-                                </figcaption>
-                            </div>
-                        </figure>
+                            </figure>
+                        </div>
+                        <div class="row mx-3">
+                            <!-- PROJET -->
+                            <figure class="col-12 col-md card mr-md-5 mb-4">
+                                <div class="card-frame">
+                                    <img class="card-img" src="images/so-pekocko-thumbnail.png" alt="Vignette de So Pekocko, projet 3 de la formation Développeur Web d'OpenClassrooms">
+                                    <div class="card-img-overlay project-description">
+                                        <p class="text-center">
+                                            Projet 6 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
+                                        </p>
+                                        <hr class="bg-white">
+                                        <p>
+                                            Développement du back-end et création de l'API sécurisée de Piquante, une application web sur des sauces piquantes
+                                        </p>
+                                        <hr class="bg-white">
+                                        <details>
+                                            <summary>Objectifs</summary>
+                                            <ul class="ml-2">
+                                                <li>Implémenter un modèle logique de données conformément à la réglementation</li>
+                                                <li>Mettre en œuvre des opérations CRUD de manière sécurisée</li>
+                                                <li>Stocker des données de manière sécurisée</li>
+                                            </ul>
+                                        </details>
+                                        <details>
+                                            <summary>Stack Technique</summary>
+                                            <p class="ml-2">
+                                                <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light mr-1">JavaScript</span>
+                                                <span class="badge badge-pill badge-light mr-1">Git</span> <span class="badge badge-pill badge-light mr-1">NodeJS</span> <span class="badge badge-pill badge-light mr-1">ExpressJS</span>
+                                                <span class="badge badge-pill badge-light mr-1">Mongoose</span> <span class="badge badge-pill badge-light">MongoDB Atlas</span>
+                                            </p>
+                                        </details>
+                                        <details>
+                                            <summary>Liens</summary>
+                                            <p class="ml-2">
+                                                <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_6_22062021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                            </p>
+                                        </details>
+                                    </div>
+                                    <figcaption class="card-body text-dark">
+                                        <h4>So Pekocko</h4>
+                                    </figcaption>
+                                </div>
+                            </figure>
+                            <!-- PROJET -->
+                            <figure class="col-12 col-md card mb-4">
+                                <div class="card-frame">
+                                    <img class="card-img" src="images/groupomania-thumbnail.png" alt="Vignette de Groupomania, projet 3 de la formation Développeur Web d'OpenClassrooms">
+                                    <div class="card-img-overlay project-description">
+                                        <p class="text-center">
+                                            Projet 7 <br/>— <br/>Formation "Développeur Web" d'OpenClassrooms
+                                        </p>
+                                        <hr class="bg-white">
+                                        <p>
+                                            Développement Full-Stack d'un réseau social interne
+                                        </p>
+                                        <hr class="bg-white">
+                                        <details>
+                                            <summary>Objectifs</summary>
+                                            <ul class="ml-2">
+                                                <li>Personnaliser le contenu envoyé à un client web</li>
+                                                <li>Authentifier un utilisateur et maintenir sa session</li>
+                                                <li>Implémenter un stockage de données sécurisé en utilisant SQL</li>
+                                                <li>Gérer un stockage de données à l'aide de SQL</li>
+                                            </ul>
+                                        </details>
+                                        <details>
+                                            <summary>Stack Technique</summary>
+                                            <p class="ml-2">
+                                                <span class="badge badge-pill badge-light mr-1">HTML</span> <span class="badge badge-pill badge-light mr-1">CSS</span> <span class="badge badge-pill badge-light mr-1">JavaScript</span>
+                                                <span class="badge badge-pill badge-light mr-1">Git</span> <span class="badge badge-pill badge-light mr-1">VueJS 2</span> <span class="badge badge-pill badge-light mr-1">Vuetify</span>
+                                                <span class="badge badge-pill badge-light mr-1">NodeJS</span> <span class="badge badge-pill badge-light mr-1">NodeJS</span> <span class="badge badge-pill badge-light mr-1">ExpressJS</span>
+                                                <span class="badge badge-pill badge-light">MySQL</span>
+                                            </p>
+                                        </details>
+                                        <details>
+                                            <summary>Liens</summary>
+                                            <p class="ml-2">
+                                                <a class="btn btn-primary" href="https://github.com/NaoDevWeb31/NaomiMango_2_26-01-2021" role="button"><i class="fab fa-github mr-2"></i>Repository</a>
+                                            </p>
+                                        </details>
+                                    </div>
+                                    <figcaption class="card-body text-dark">
+                                        <h4>Groupomania</h4>
+                                    </figcaption>
+                                </div>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <div id="contact-anchor" class="scroll-adjust"></div>
-        <footer id="contact" class="row bg-secondary text-white">
-            <div id="contact-title" class="col-md-12 text-center mt-4 mb-4 mb-md-2 d-flex justify-content-center">
-                <h3 class="pl-2">Contact</h3>
-            </div>
-            <div id="contact-email" class="col-md-6 text-center mb-2">
-                <address>
-                    Besoin de me contacter ? Pas de problème !<br/>
-                    Vous pouvez me joindre par email à l'adresse suivante :<br/>
-                    <a id="email-link" href="mailto:naomi.mango@gmail.com"> naomi.mango@gmail.com </a><br/>
-                    Je tâcherai de vous répondre aussi vite que possible.
-                </address>
-            </div>
-            <div id="contact-social" class="col-md-6 text-center mb-2">
-                <p class="text-center">Retrouvez-moi également sur les sites suivants :</p>
-                <p class="text-center row d-xs-inline"> 
-                    <a class="footer-icon col-12 mb-2 col-xs-6" href="https://www.linkedin.com/in/naomi-mango/" target="_blank" rel="noopener"><span class="sr-only">LinkedIn</span><span class="fab fa-linkedin"></span></a>
-                    <a class="footer-icon col-12 col-xs-6" href="https://github.com/NaoDevWeb31" target="_blank" rel="noopener"><span class="sr-only">GitHub</span><span class="fab fa-github"></span></a>
-                </p>
+        <footer id="contact" class="container-fluid">
+            <div class="row bg-secondary text-white">
+                <div id="contact-title" class="col-md-12 text-center mt-4 mb-4 mb-md-2 d-flex justify-content-center">
+                    <h3 class="pl-2">Contact</h3>
+                </div>
+                <div id="contact-email" class="col-md-6 text-center mb-2">
+                    <address>
+                        Besoin de me contacter ? Pas de problème !<br/>
+                        Vous pouvez me joindre par email à l'adresse suivante :<br/>
+                        <a id="email-link" href="mailto:naomi.mango@gmail.com"> naomi.mango@gmail.com </a><br/>
+                        Je tâcherai de vous répondre aussi vite que possible.
+                    </address>
+                </div>
+                <div id="contact-social" class="col-md-6 text-center mb-2">
+                    <p class="text-center">Retrouvez-moi également sur les sites suivants :</p>
+                    <p class="text-center row d-xs-inline"> 
+                        <a class="footer-icon col-12 mb-2 col-xs-6" href="https://www.linkedin.com/in/naomi-mango/" target="_blank" rel="noopener"><span class="sr-only">LinkedIn</span><span class="fab fa-linkedin"></span></a>
+                        <a class="footer-icon col-12 col-xs-6" href="https://github.com/NaoDevWeb31" target="_blank" rel="noopener"><span class="sr-only">GitHub</span><span class="fab fa-github"></span></a>
+                    </p>
+                </div>
             </div>
         </footer>
 
+        <script async src="js/index.js"></script>
         <!-- jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
