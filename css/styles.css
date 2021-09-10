@@ -776,10 +776,10 @@ h3 {
   }
 }
 #modal-container2 {
-  border-top: 7px solid var(--border-blue-top);
+  border-top: 7px solid #2d75d3;
 }
 #modal-container1 {
-  border-top: 7px solid #2d75d3;
+  border-top: 7px solid var(--border-blue-top);
 }
 .modal-list {
   list-style: none;
