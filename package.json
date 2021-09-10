@@ -7,8 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prefix": "postcss ./css/styles.css --use autoprefixer -d ./css/prefixed/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,7 +15,6 @@
   },
   "author": "Naomi Mango",
   "license": "ISC",
-  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/NaoDevWeb31/NM_Portfolio_092021/issues"
   },

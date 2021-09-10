@@ -1,4 +1,25 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /**************** KEYFRAMES ****************/
+@-webkit-keyframes loader {
+  0% {
+    opacity: 0.8;
+    z-index: 1100;
+  }
+  75% {
+    opacity: 0.8;
+    z-index: 1100;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
 @keyframes loader {
   0% {
     opacity: 0.8;
@@ -13,67 +34,161 @@
     z-index: -100;
   }
 }
-@keyframes configure-clockwise {
+@-webkit-keyframes configure-clockwise {
   0% {
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   25% {
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
   50% {
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
   75% {
+    -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
   }
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+@keyframes configure-clockwise {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes configure-xclockwise {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  25% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  75% {
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+  }
+  100% {
+    -webkit-transform: rotate(-315deg);
+    transform: rotate(-315deg);
   }
 }
 @keyframes configure-xclockwise {
   0% {
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   25% {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
   50% {
+    -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
   75% {
+    -webkit-transform: rotate(-225deg);
     transform: rotate(-225deg);
   }
   100% {
+    -webkit-transform: rotate(-315deg);
     transform: rotate(-315deg);
+  }
+}
+@-webkit-keyframes wiggle {
+  0%,
+  7% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
+  }
+  15% {
+    -webkit-transform: rotateZ(-15deg);
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    -webkit-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    -webkit-transform: rotateZ(6deg);
+    transform: rotateZ(6deg);
+  }
+  35% {
+    -webkit-transform: rotateZ(-4deg);
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    -webkit-transform: rotateZ(0);
+    transform: rotateZ(0);
   }
 }
 @keyframes wiggle {
   0%,
   7% {
+    -webkit-transform: rotateZ(0);
     transform: rotateZ(0);
   }
   15% {
+    -webkit-transform: rotateZ(-15deg);
     transform: rotateZ(-15deg);
   }
   20% {
+    -webkit-transform: rotateZ(10deg);
     transform: rotateZ(10deg);
   }
   25% {
+    -webkit-transform: rotateZ(-10deg);
     transform: rotateZ(-10deg);
   }
   30% {
+    -webkit-transform: rotateZ(6deg);
     transform: rotateZ(6deg);
   }
   35% {
+    -webkit-transform: rotateZ(-4deg);
     transform: rotateZ(-4deg);
   }
   40%,
   100% {
+    -webkit-transform: rotateZ(0);
     transform: rotateZ(0);
   }
 }
-@keyframes left-timeline {
+@-webkit-keyframes left-timeline {
   0% {
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     opacity: 0;
   }
@@ -81,12 +196,29 @@
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes right-timeline {
+@keyframes left-timeline {
   0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes right-timeline {
+  0% {
+    -webkit-transform: translateX(50%);
     transform: translateX(50%);
     opacity: 0;
   }
@@ -94,12 +226,29 @@
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes top-timeline {
+@keyframes right-timeline {
   0% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes top-timeline {
+  0% {
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     opacity: 0;
   }
@@ -107,6 +256,22 @@
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes top-timeline {
+  0% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
@@ -140,28 +305,45 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-animation: loader 3s both cubic-bezier(0.19, 1, 0.22, 1);
   animation: loader 3s both cubic-bezier(0.19, 1, 0.22, 1);
 }
 .loading {
   width: 10rem;
   height: 10rem;
   padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .loading-1 {
   position: absolute;
   background: #53aafb;
+  -webkit-animation: configure-clockwise 2s ease-in-out infinite alternate;
   animation: configure-clockwise 2s ease-in-out infinite alternate;
 }
 .loading-2 {
   left: -7rem;
   background: rgb(63, 236, 249);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  -webkit-animation: configure-xclockwise 2s ease-in-out infinite alternate;
   animation: configure-xclockwise 2s ease-in-out infinite alternate;
 }
 .loading-spinner {
@@ -173,16 +355,26 @@ h3 {
 .nav-link {
   display: block;
   padding: 1.7rem 0rem;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
 }
 .nav-item:hover > .nav-link:hover {
   color: white;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .nav-item:nth-child(5n + 1):hover,
 .nav-item:nth-child(5n + 1) > .nav-link.active {
+  background: -o-linear-gradient(150deg, rgba(255, 255, 255, 0.062), black),
+    no-repeat center/130% url("../images/about-navigation.jpg");
   background: linear-gradient(300deg, rgba(255, 255, 255, 0.062), black),
     no-repeat center/130% url("../images/about-navigation.jpg");
   color: white;
@@ -190,6 +382,8 @@ h3 {
 }
 .nav-item:nth-child(5n + 2):hover,
 .nav-item:nth-child(5n + 2) > .nav-link.active {
+  background: -o-linear-gradient(150deg, rgba(255, 255, 255, 0.062), black),
+    no-repeat center/110% url("../images/training-navigation.jpg");
   background: linear-gradient(300deg, rgba(255, 255, 255, 0.062), black),
     no-repeat center/110% url("../images/training-navigation.jpg");
   color: white;
@@ -197,6 +391,20 @@ h3 {
 }
 .nav-item:nth-child(5n + 3):hover,
 .nav-item:nth-child(5n + 3) > .nav-link.active {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.062)),
+      to(rgba(44, 44, 44, 0.2))
+    ),
+    no-repeat center/100% url("../images/skills-navigation.jpg");
+  background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0.062),
+      rgba(44, 44, 44, 0.2)
+    ),
+    no-repeat center/100% url("../images/skills-navigation.jpg");
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.062),
@@ -208,6 +416,20 @@ h3 {
 }
 .nav-item:nth-child(5n + 4):hover,
 .nav-item:nth-child(5n + 4) > .nav-link.active {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.062)),
+      to(rgba(44, 44, 44, 0.2))
+    ),
+    no-repeat center/140% url("../images/portfolio-navigation.jpg");
+  background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0.062),
+      rgba(44, 44, 44, 0.2)
+    ),
+    no-repeat center/140% url("../images/portfolio-navigation.jpg");
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.062),
@@ -219,6 +441,20 @@ h3 {
 }
 .nav-item:nth-child(5n + 5):hover,
 .nav-item:nth-child(5n + 5) > .nav-link.active {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.062)),
+      to(rgba(44, 44, 44, 0.2))
+    ),
+    no-repeat 90% 50%/150% url("../images/contact-navigation.jpg");
+  background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0.062),
+      rgba(44, 44, 44, 0.2)
+    ),
+    no-repeat 90% 50%/150% url("../images/contact-navigation.jpg");
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.062),
@@ -252,6 +488,20 @@ h3 {
 #intro {
   padding-top: 200px;
   height: 670px;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0.2)),
+      to(rgba(255, 255, 255, 0.2))
+    ),
+    url("../images/mac-code-editor-yellow-mug-plant.jpg");
+  background: -o-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../images/mac-code-editor-yellow-mug-plant.jpg");
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.2),
@@ -283,6 +533,12 @@ h3 {
 /**************** ABOUT SECTION ****************/
 #about {
   background: rgb(2, 0, 36);
+  background: -o-linear-gradient(
+    308deg,
+    var(--bg-dark-blue) 0%,
+    var(--bg-primary-blue) 65%,
+    var(--bg-secondary-blue) 100%
+  );
   background: linear-gradient(
     142deg,
     var(--bg-dark-blue) 0%,
@@ -295,6 +551,8 @@ h3 {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #about-image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 35%;
     flex: 0 0 35%;
     max-width: 35%;
   }
@@ -306,6 +564,8 @@ h3 {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #about-text {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 65%;
     flex: 0 0 65%;
     max-width: 65%;
   }
@@ -313,11 +573,19 @@ h3 {
 #about-status {
   font-family: "Bebas Neue", cursive;
   font-size: 1.3rem;
+  -webkit-animation: wiggle 2s linear infinite;
   animation: wiggle 2s linear infinite;
 }
 /**************** TRAINING SECTION ****************/
 #training {
   background: rgb(204, 204, 204);
+  background: -o-linear-gradient(
+    300deg,
+    rgba(230, 231, 232, 1) 0%,
+    rgba(204, 204, 204, 1) 30%,
+    rgba(187, 189, 191, 1) 60%,
+    rgba(230, 231, 232, 1) 94%
+  );
   background: linear-gradient(
     150deg,
     rgba(230, 231, 232, 1) 0%,
@@ -345,10 +613,19 @@ h3 {
 }
 .main-timeline .timeline-content {
   color: #fff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#17728d),
+    to(#088a8f)
+  );
+  background: -o-linear-gradient(left, #17728d, #088a8f);
   background: linear-gradient(to right, #17728d, #088a8f);
   text-align: center;
   padding: 20px 20px 20px 100px;
   border-radius: 0 20px 20px 0;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   display: block;
   position: relative;
@@ -366,6 +643,7 @@ h3 {
   width: 230px;
   height: 100%;
   border-radius: 98px 0 0 10px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   position: absolute;
   left: -230px;
@@ -374,6 +652,8 @@ h3 {
 .main-timeline .timeline-icon {
   color: #fff;
   font-size: 50px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   left: 30px;
@@ -406,9 +686,11 @@ h3 {
   margin: 0 20px 20px 0;
 }
 .left-entry-animation {
+  -webkit-animation: left-timeline 900ms ease-out backwards;
   animation: left-timeline 900ms ease-out backwards;
 }
 .right-entry-animation {
+  -webkit-animation: right-timeline 900ms ease-out backwards;
   animation: right-timeline 900ms ease-out backwards;
 }
 .main-timeline .timeline:nth-child(even) .timeline-content {
@@ -418,6 +700,7 @@ h3 {
 .main-timeline .timeline:nth-child(even) .timeline-content:before {
   right: auto;
   left: 0;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 65% 0);
   clip-path: polygon(0 0, 100% 100%, 65% 0);
 }
 .main-timeline .timeline:nth-child(even) .timeline-year {
@@ -430,6 +713,14 @@ h3 {
   left: auto;
 }
 .main-timeline .timeline:nth-child(2n + 1) .timeline-content {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0c59a7),
+    to(#2983dd)
+  );
+  background: -o-linear-gradient(left, #0c59a7, #2983dd);
   background: linear-gradient(to right, #0c59a7, #2983dd);
 }
 .main-timeline .timeline:nth-child(2n + 1) .timeline-year {
@@ -454,6 +745,7 @@ h3 {
   .main-timeline .timeline:nth-child(even) .timeline-year {
     font-size: 25px;
     border-radius: 15px 15px 0 0;
+    -webkit-box-shadow: none;
     box-shadow: none;
     width: 170px;
     height: 50px;
@@ -468,6 +760,7 @@ h3 {
     right: auto;
   }
   .top-entry-animation {
+    -webkit-animation: top-timeline 900ms ease-out backwards;
     animation: top-timeline 900ms ease-out backwards;
   }
 }
@@ -492,6 +785,8 @@ h3 {
   list-style: none;
 }
 .modal-bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.5rem;
 }
@@ -513,14 +808,29 @@ h3 {
 .progress-bar {
   font-size: 1.2rem;
   font-weight: bold;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--bg-dark-blue)),
+    to(#0d5caa)
+  );
+  background: -o-linear-gradient(left, var(--bg-dark-blue), #0d5caa);
   background: linear-gradient(to right, var(--bg-dark-blue), #0d5caa);
 }
 #skill-pdf:hover {
+  -webkit-animation: wiggle 2s linear infinite;
   animation: wiggle 2s linear infinite;
 }
 /**************** PORTFOLIO SECTION ****************/
 #portfolio {
   background: rgb(2, 0, 36);
+  background: -o-linear-gradient(
+    308deg,
+    var(--bg-dark-blue) 0%,
+    var(--bg-primary-blue) 65%,
+    var(--bg-secondary-blue) 100%
+  );
   background: linear-gradient(
     142deg,
     var(--bg-dark-blue) 0%,
@@ -539,6 +849,8 @@ h3 {
 .card-frame:hover .project-description {
   visibility: visible;
   opacity: 1;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
 .project-description {
@@ -549,8 +861,20 @@ h3 {
   background-color: rgba(0, 0, 0, 0.85);
   overflow: scroll;
   opacity: 0;
+  -webkit-transition: opacity 400ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    -webkit-transform 200ms;
+  transition: opacity 400ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    -webkit-transform 200ms;
+  -o-transition: opacity 400ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 200ms;
   transition: opacity 400ms cubic-bezier(0.22, 0.61, 0.36, 1), transform 200ms;
+  transition: opacity 400ms cubic-bezier(0.22, 0.61, 0.36, 1), transform 200ms,
+    -webkit-transform 200ms;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
   transform: scaleY(0);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
   transform-origin: top;
 }
 .badge {
@@ -566,12 +890,14 @@ h3 {
   }
 }
 figcaption {
+  background: -o-linear-gradient(280deg, rgb(206, 206, 206) 0%, white 100%);
   background: linear-gradient(170deg, rgb(206, 206, 206) 0%, white 100%);
 }
 /**************** CONTACT SECTION ****************/
 @media screen and (min-width: 331px) {
   .col-xs-6 {
     -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -593,5 +919,6 @@ figcaption {
   color: white;
 }
 .social-icon:hover {
+  -webkit-animation: wiggle 2s linear infinite;
   animation: wiggle 2s linear infinite;
 }
