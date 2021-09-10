@@ -145,25 +145,21 @@ h3 {
   align-items: center;
   animation: loader 3s both cubic-bezier(0.19, 1, 0.22, 1);
 }
-.loading-1 {
+.loading {
   width: 10rem;
   height: 10rem;
   padding: 3px;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.loading-1 {
+  position: absolute;
   background: #53aafb;
   animation: configure-clockwise 2s ease-in-out infinite alternate;
 }
 .loading-2 {
-  width: 10rem;
-  height: 10rem;
-  padding: 3px;
   left: -7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: rgb(63, 236, 249);
   transform: rotate(45deg);
   animation: configure-xclockwise 2s ease-in-out infinite alternate;
@@ -408,9 +404,11 @@ h3 {
 .main-timeline .timeline:nth-child(even) {
   float: left;
   margin: 0 20px 20px 0;
+}
+.left-entry-animation {
   animation: left-timeline 900ms ease-out backwards;
 }
-.main-timeline .timeline:nth-child(2n + 1) {
+.right-entry-animation {
   animation: right-timeline 900ms ease-out backwards;
 }
 .main-timeline .timeline:nth-child(even) .timeline-content {
@@ -469,10 +467,7 @@ h3 {
     left: 15px;
     right: auto;
   }
-  .main-timeline .timeline:nth-child(even) {
-    animation: top-timeline 900ms ease-out backwards;
-  }
-  .main-timeline .timeline:nth-child(2n + 1) {
+  .top-entry-animation {
     animation: top-timeline 900ms ease-out backwards;
   }
 }
