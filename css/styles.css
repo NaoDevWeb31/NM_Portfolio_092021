@@ -111,6 +111,7 @@
     opacity: 1;
   }
 }
+/**************** STYLES ****************/
 :root {
   --bg-primary-blue: rgba(51, 83, 132, 1);
   --bg-secondary-blue: rgba(28, 135, 159, 1);
@@ -532,12 +533,13 @@ h3 {
     var(--bg-secondary-blue) 100%
   );
 }
-figure.card {
+#portfolio .card {
   padding: 0 0;
 }
 .card-frame {
   position: relative;
   border-radius: 0.25rem;
+  margin: 0;
 }
 .card-frame:hover .project-description {
   visibility: visible;
