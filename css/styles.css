@@ -779,7 +779,7 @@ h3 {
   border-top: 7px solid #2d75d3;
 }
 #modal-container1 {
-  border-top: 7px solid var(--border-blue-top);
+  border-top: 7px solid #1c87a0;
 }
 .modal-list {
   list-style: none;
