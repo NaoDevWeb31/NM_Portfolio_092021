@@ -905,12 +905,12 @@ figcaption {
     display: inline !important;
   }
 }
-#email-link {
+/* #email-link {
   color: rgba(0, 0, 0, 0.541);
 }
 #email-link:hover {
   color: rgba(255, 255, 255, 0.541);
-}
+} */
 .footer-icon {
   color: rgba(255, 255, 255, 0.541);
   font-size: 30px;
@@ -918,6 +918,7 @@ figcaption {
 .footer-icon:hover {
   color: white;
 }
+#email-icon:hover,
 .social-icon:hover {
   -webkit-animation: wiggle 2s linear infinite;
   animation: wiggle 2s linear infinite;

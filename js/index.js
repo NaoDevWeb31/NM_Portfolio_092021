@@ -49,3 +49,27 @@ window.addEventListener('scroll', function(e)  {
         }
     }
 });
+
+// Protect my email
+function decode(cryptedHref) {
+    return cryptedHref.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13)? c : c - 26);
+    })
+};
+var emailLink = document.getElementById("email-link");
+function openMailer(element) {
+    var decryptedHref = decode("znvygb:anbzv.znatb@tznvy.pbz?fhowrpg=AZ%20r-Cbegsbyvb%20%7P%20Pbagnpgre%20nh%20fhwrg%20qr%20...");
+    element.setAttribute("href", decryptedHref);
+    element.setAttribute("onclick", "");
+    setTimeout(function(){
+        emailLink.setAttribute("href", " ");
+    }, 500)
+};
+// Handle icons for email
+var emailIcon = document.getElementById("email-icon");
+emailLink.addEventListener("click", function() {
+    emailIcon.classList.replace("fa-envelope", "fa-envelope-open")
+    setTimeout(function(){
+        emailIcon.classList.replace("fa-envelope-open", "fa-envelope")
+    }, 2000)
+})
