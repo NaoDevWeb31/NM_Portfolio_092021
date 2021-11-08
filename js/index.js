@@ -9,17 +9,21 @@ var docWidth = document.documentElement.offsetWidth;
     }
 );
 
-// Create the observer
-const observer = new IntersectionObserver(entries => {
+// Create the observers
+const trainingObserver = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
-        const firstTimeline = entry.target.querySelector('.training-2');
-        const secondTimeline = entry.target.querySelector('.training-1');
+        const firstTimeline = entry.target.querySelector('.training-4');
+        const secondTimeline = entry.target.querySelector('.training-3');
+        const thirdTimeline = entry.target.querySelector('.training-2');
+        const forthTimeline = entry.target.querySelector('.training-1');
         // If the elements are visible for bigger viewports
         if (entry.isIntersecting && window.innerWidth > 991) {
             // Add the animation classes
             firstTimeline.classList.add('right-entry-animation');
             secondTimeline.classList.add('left-entry-animation');
+            thirdTimeline.classList.add('right-entry-animation');
+            forthTimeline.classList.add('left-entry-animation');
             return; // if we added the classes, exit the function
         }
         // If the elements are visible for smaller viewports
@@ -27,17 +31,37 @@ const observer = new IntersectionObserver(entries => {
             // Add the animation classes
             firstTimeline.classList.add('top-entry-animation');
             secondTimeline.classList.add('top-entry-animation');
+            thirdTimeline.classList.add('top-entry-animation');
+            forthTimeline.classList.add('top-entry-animation');
             return; // if we added the classes, exit the function
         }
         // We're not intersecting, so remove the classes!
         firstTimeline.classList.remove('right-entry-animation');
         secondTimeline.classList.remove('left-entry-animation');
+        thirdTimeline.classList.remove('right-entry-animation');
+        forthTimeline.classList.remove('left-entry-animation');
         firstTimeline.classList.remove('top-entry-animation');
         secondTimeline.classList.remove('top-entry-animation');
+        thirdTimeline.classList.remove('top-entry-animation');
+        forthTimeline.classList.remove('top-entry-animation');
     });
 });
-// Tell the observer which element to track
-observer.observe(document.querySelector('.main-timeline'));
+const portfolioObserver = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+        const downArrowIcon = entry.target.querySelector('.fa-arrow-circle-down');
+        // If the element is visible
+        if (entry.isIntersecting) {
+            downArrowIcon.classList.add('down-arrow-animation');
+            return; // if we added the class, exit the function
+        }
+        // We're not intersecting, so remove the class!
+        downArrowIcon.classList.remove('down-arrow-animation');
+    });
+});
+// Tell the observers which element to track
+trainingObserver.observe(document.querySelector('.main-timeline'));
+portfolioObserver.observe(document.querySelector('#portfolio-description'));
 
 const links = document.links;
 window.addEventListener('scroll', function(e)  {
