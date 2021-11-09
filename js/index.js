@@ -9,41 +9,60 @@ var docWidth = document.documentElement.offsetWidth;
     }
 );
 
+const animationClasses = ['right-entry-animation', 'left-entry-animation', 'top-entry-animation', 'down-arrow-animation'];
+
 // Create the observers
 const trainingObserver = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
-        const firstTimeline = entry.target.querySelector('.training-4');
-        const secondTimeline = entry.target.querySelector('.training-3');
-        const thirdTimeline = entry.target.querySelector('.training-2');
-        const forthTimeline = entry.target.querySelector('.training-1');
+        // Select the timelines
+        var timelines = [];
+        var targetedTimeline = elt => entry.target.querySelector(elt);
+        var firstTimeline, secondTimeline, thirdTimeline, forthTimeline;
+        timelines.push(
+            (firstTimeline = targetedTimeline('.training-4')), 
+            (secondTimeline = targetedTimeline('.training-3')), 
+            (thirdTimeline = targetedTimeline('.training-2')), 
+            (forthTimeline = targetedTimeline('.training-1'))
+        );
+
+        // Create handlers for the animations
+        var topEntry = elt => elt.classList.add(animationClasses[2]);
+        var sideEntry = (start, className) => {
+            let i = start; // Start index of the loop
+            while (i < timelines.length) {
+                var elt = timelines[i];
+                elt.classList.add(className); // Add a class to the element
+                i += 2; // Get 1 in every 2 elements of the array
+            }
+        }
+        var removeAnimations = (start, className1, className2) => {
+            let i = start; // Start index of the loop
+            while (i < timelines.length) {
+                var elt = timelines[i];
+                elt.classList.remove(className1, className2); // Remove classes to the element
+                i += 2; // Get 1 in every 2 elements of the array
+            }
+        }
+
         // If the elements are visible for bigger viewports
         if (entry.isIntersecting && window.innerWidth > 991) {
             // Add the animation classes
-            firstTimeline.classList.add('right-entry-animation');
-            secondTimeline.classList.add('left-entry-animation');
-            thirdTimeline.classList.add('right-entry-animation');
-            forthTimeline.classList.add('left-entry-animation');
+            sideEntry(0, animationClasses[0]);
+            sideEntry(1, animationClasses[1]);
             return; // if we added the classes, exit the function
         }
         // If the elements are visible for smaller viewports
         if (entry.isIntersecting && window.innerWidth <= 991) {
-            // Add the animation classes
-            firstTimeline.classList.add('top-entry-animation');
-            secondTimeline.classList.add('top-entry-animation');
-            thirdTimeline.classList.add('top-entry-animation');
-            forthTimeline.classList.add('top-entry-animation');
+            // Add the animation class
+            timelines.forEach(timeline => {
+                topEntry(timeline);
+            });
             return; // if we added the classes, exit the function
         }
         // We're not intersecting, so remove the classes!
-        firstTimeline.classList.remove('right-entry-animation');
-        secondTimeline.classList.remove('left-entry-animation');
-        thirdTimeline.classList.remove('right-entry-animation');
-        forthTimeline.classList.remove('left-entry-animation');
-        firstTimeline.classList.remove('top-entry-animation');
-        secondTimeline.classList.remove('top-entry-animation');
-        thirdTimeline.classList.remove('top-entry-animation');
-        forthTimeline.classList.remove('top-entry-animation');
+        removeAnimations(0, animationClasses[0], animationClasses[2]);
+        removeAnimations(1, animationClasses[1], animationClasses[2]);
     });
 });
 const portfolioObserver = new IntersectionObserver(entries => {
@@ -52,17 +71,18 @@ const portfolioObserver = new IntersectionObserver(entries => {
         const downArrowIcon = entry.target.querySelector('.fa-arrow-circle-down');
         // If the element is visible
         if (entry.isIntersecting) {
-            downArrowIcon.classList.add('down-arrow-animation');
+            downArrowIcon.classList.add(animationClasses[3]);
             return; // if we added the class, exit the function
         }
         // We're not intersecting, so remove the class!
-        downArrowIcon.classList.remove('down-arrow-animation');
+        downArrowIcon.classList.remove(animationClasses[3]);
     });
 });
 // Tell the observers which element to track
 trainingObserver.observe(document.querySelector('.main-timeline'));
 portfolioObserver.observe(document.querySelector('#portfolio-description'));
 
+// Allow the navbar links to monitor the scrolling
 const links = document.links;
 window.addEventListener('scroll', function(e)  {
     for (let index = 0; index < links.length; index++) {
