@@ -20,10 +20,12 @@ const trainingObserver = new IntersectionObserver(entries => {
         var targetedTimeline = elt => entry.target.querySelector(elt);
         var firstTimeline, secondTimeline, thirdTimeline, forthTimeline;
         timelines.push(
-            (firstTimeline = targetedTimeline('.training-4')), 
-            (secondTimeline = targetedTimeline('.training-3')), 
-            (thirdTimeline = targetedTimeline('.training-2')), 
-            (forthTimeline = targetedTimeline('.training-1'))
+            (firstTimeline = targetedTimeline('.training-6')), 
+            (secondTimeline = targetedTimeline('.training-5')), 
+            (thirdTimeline = targetedTimeline('.training-4')), 
+            (forthTimeline = targetedTimeline('.training-3')), 
+            (fifthTimeline = targetedTimeline('.training-2')), 
+            (sixthTimeline = targetedTimeline('.training-1')),
         );
 
         // Create handlers for the animations
