@@ -724,6 +724,11 @@ h3 {
     -o-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
 }
+#company-detail {
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.85;
+}
 
 /**************** TRAINING SECTION ****************/
 #training {
