@@ -16,18 +16,7 @@ const trainingObserver = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
         // Select the timelines
-        var timelines = [];
-        var targetedTimeline = elt => entry.target.querySelector(elt);
-        var firstTimeline, secondTimeline, thirdTimeline, forthTimeline;
-        timelines.push(
-            (firstTimeline = targetedTimeline('.training-7')), 
-            (secondTimeline = targetedTimeline('.training-6')), 
-            (thirdTimeline = targetedTimeline('.training-5')), 
-            (forthTimeline = targetedTimeline('.training-4')), 
-            (fifthTimeline = targetedTimeline('.training-3')), 
-            (sixthTimeline = targetedTimeline('.training-2')),
-            (seventhTimeline = targetedTimeline('.training-1')),
-        );
+        var timelines = entry.target.querySelectorAll('.timeline');
 
         // Create handlers for the animations
         var topEntry = elt => elt.classList.add(animationClasses[2]);
